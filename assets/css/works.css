@@ -624,8 +624,7 @@ footer .under hr {
     width: 100%;
     height: 100%;
     overflow: visible;
-    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
-      center center;
+    background: var(--bg-color);
   }
   ::-webkit-scrollbar {
     width: 9px;
@@ -979,8 +978,7 @@ footer .under hr {
     width: 100%;
     height: 100%;
     overflow: visible;
-    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
-      center center;
+    background: var(--bg-color);
   }
   .h-tape {
     position: absolute;
@@ -1186,7 +1184,7 @@ footer .under hr {
     margin-top: -4.6vw;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 2.6vw;
+    font-size: 2.7vw;
     line-height: 1.1em;
   }
 
@@ -1194,7 +1192,7 @@ footer .under hr {
     line-height: 4rem;
     color: var(--main-color);
     font-family: "Le murmure";
-    font-size: 12vw;
+    font-size: 14vw;
     letter-spacing: -0.01px;
   }
   .p-list {
@@ -1202,7 +1200,7 @@ footer .under hr {
     text-align: left;
     position: relative;
     display: flex;
-    left: 6.6vw;
+    left: 5vw;
   }
   /* ======= FOOTER ======= */
   .foot__wrapp {
