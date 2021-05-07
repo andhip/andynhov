@@ -72,7 +72,7 @@
 }
 
 /* Prelaoder */
-#preloader {
+/* #preloader {
   position: fixed;
   left: 0;
   top: 0;
@@ -82,7 +82,7 @@
   overflow: visible;
   background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
     center center;
-}
+} */
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
@@ -616,7 +616,7 @@ footer .under hr {
 
 @media only screen and (min-device-width: 481px) and (max-width: 768px) {
   /* Prelaoder */
-  #preloader {
+  /* #preloader {
     position: fixed;
     left: 0;
     top: 0;
@@ -626,7 +626,7 @@ footer .under hr {
     overflow: visible;
     background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
       center center;
-  }
+  } */
   ::-webkit-scrollbar {
     width: 9px;
   }
@@ -969,9 +969,9 @@ footer .under hr {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Prelaoder */
-  #preloader {
+  /* #preloader {
     position: fixed;
     left: 0;
     top: 0;
@@ -981,7 +981,7 @@ footer .under hr {
     overflow: visible;
     background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
       center center;
-  }
+  } */
   .h-tape {
     position: absolute;
     left: 23vw;
@@ -1202,7 +1202,7 @@ footer .under hr {
     text-align: left;
     position: relative;
     display: flex;
-    left: 5vw;
+    left: 2vw;
   }
   /* ======= FOOTER ======= */
   .foot__wrapp {

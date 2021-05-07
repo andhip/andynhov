@@ -2,13 +2,13 @@
   "use strict";
 
   // Preloader
-  $(window).on("load", function () {
-    $("#preloader")
-      .delay(5)
-      .fadeOut("slow", function () {
-        $(this).remove();
-      });
-  });
+  // $(window).on("load", function () {
+  //   $("#preloader")
+  //     .delay(5)
+  //     .fadeOut("slow", function () {
+  //       $(this).remove();
+  //     });
+  // });
 
   // Initiate the wowjs
   new WOW().init();
