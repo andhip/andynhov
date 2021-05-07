@@ -624,7 +624,8 @@ footer .under hr {
     width: 100%;
     height: 100%;
     overflow: visible;
-    background: var(--bg-color);
+    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
+      center center;
   }
   ::-webkit-scrollbar {
     width: 9px;
@@ -978,7 +979,8 @@ footer .under hr {
     width: 100%;
     height: 100%;
     overflow: visible;
-    background: var(--bg-color);
+    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
+      center center;
   }
   .h-tape {
     position: absolute;
