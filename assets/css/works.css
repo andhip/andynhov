@@ -264,12 +264,12 @@ header {
 .placeholder {
   position: relative;
   text-align: left;
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: 400;
-  line-height: 6.8rem;
+  line-height: 5.5rem;
   letter-spacing: -2px;
   font-family: "Guardian Ty-Re";
-  margin-top: 8vw;
+  margin-top: 6vw;
   text-transform: none;
 }
 
@@ -391,13 +391,13 @@ a {
 /* img-header */
 header img.img-header {
   position: relative;
-  width: 38%;
+  width: 36%;
   height: auto;
   z-index: -3;
   padding-top: 0;
-  margin-top: -19.5rem;
+  margin-top: -18.5rem;
   float: right;
-  margin-right: 6vw;
+  margin-right: 5vw;
   opacity: 80%;
   animation: nudge 12s linear infinite alternate;
 }
@@ -456,7 +456,7 @@ header .p-arrow path {
   }
 }
 #works {
-  padding-top: 18rem !important;
+  padding-top: 15rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -689,9 +689,9 @@ footer .under hr {
   .placeholder {
     position: relative;
     text-align: left;
-    font-size: 3em;
+    font-size: 3.4em;
     font-weight: 400;
-    line-height: 4.5rem;
+    line-height: 4.8rem;
     letter-spacing: -1.5px;
     font-family: "Guardian Ty-Re";
     margin-top: 8vw;
@@ -788,7 +788,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 29vw;
+    top: 62vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -807,11 +807,25 @@ footer .under hr {
     height: auto;
     z-index: -3;
     padding-top: 0;
-    margin-top: -11rem;
+    margin-top: -12rem;
     float: right;
-    margin-right: 6vw;
+    margin-right: 4vw;
     opacity: 80%;
     animation: nudge 12s linear infinite alternate;
+  }
+  @keyframes nudge {
+    0%,
+    50% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(40px, 0);
+    }
+
+    50% {
+      transform: translate(-40px, 0);
+    }
   }
 
   /* WORKS */
@@ -841,7 +855,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 16rem !important;
+    padding-top: 13.5rem !important;
   }
   .sub-works h2 {
     position: relative;
@@ -1008,9 +1022,9 @@ footer .under hr {
   .placeholder {
     position: relative;
     text-align: left;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 3.7rem;
     letter-spacing: -0.01px;
     font-family: "Guardian Ty-Re";
     margin-top: 10vw;
@@ -1019,8 +1033,8 @@ footer .under hr {
 
   /* mail */
   .placeholder-contact {
-    font-size: 2.4vw;
-    margin-top: -0.5rem;
+    font-size: 2.7vw;
+    margin-top: -0.8rem;
     text-align: left;
     margin-left: 6px;
   }
@@ -1052,8 +1066,8 @@ footer .under hr {
 
   li {
     margin-bottom: 9vw;
-    font-size: 2.5vw;
-    letter-spacing: normal;
+    font-size: 2.7vw;
+    letter-spacing: 0.2px;
     margin-top: 2rem;
     padding: 0 8px;
     outline: 0 none;
@@ -1093,7 +1107,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 37vw;
+    top: 124vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1112,11 +1126,25 @@ footer .under hr {
     height: auto;
     z-index: -3;
     padding-top: 0;
-    margin-top: -7rem;
+    margin-top: -5.5rem;
     float: right;
-    margin-right: 5vw;
+    margin-right: 3vw;
     opacity: 80%;
     animation: nudge 12s linear infinite alternate;
+  }
+  @keyframes nudge {
+    0%,
+    50% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(40px, 0);
+    }
+
+    50% {
+      transform: translate(-40px, 0);
+    }
   }
 
   /* WORKS */
@@ -1155,7 +1183,7 @@ footer .under hr {
     margin-bottom: 10vw;
   }
   .text {
-    margin-top: -3vw;
+    margin-top: -4.6vw;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 2.6vw;
