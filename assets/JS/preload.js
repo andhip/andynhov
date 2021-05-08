@@ -15,6 +15,8 @@
     }
   }, 100);
 
+  window.addEventListener("load", fadeEffect);
+
   //   $(window).on("load", function () {
   //     $("#preloader")
   //       .delay(100)
