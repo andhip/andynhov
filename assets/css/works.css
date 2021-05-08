@@ -1107,7 +1107,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 124vw;
+    top: 128vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1195,7 +1195,7 @@ footer .under hr {
     color: var(--main-color);
     font-family: "Le murmure";
     font-size: 14vw;
-    letter-spacing: -0.01px;
+    letter-spacing: -1px;
   }
   .p-list {
     float: left;
@@ -1287,7 +1287,7 @@ footer .under hr {
     position: absolute;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 2.2vw;
+    font-size: 2.1vw;
     line-height: 2.5vw;
     margin-top: 0.25rem;
     float: left;
