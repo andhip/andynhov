@@ -269,12 +269,12 @@ header {
   line-height: 5.5rem;
   letter-spacing: -2px;
   font-family: "Guardian Ty-Re";
-  margin-top: 6vw;
+  margin-top: 6.5vw;
   text-transform: none;
 }
 
 /* mail */
-.placeholder-contact {
+/* .placeholder-contact {
   font-size: 1.1vw;
   margin-top: 2rem;
   text-align: left;
@@ -292,13 +292,13 @@ header {
   width: 100%;
   height: 1px;
   background-color: currentColor;
-}
+} */
 
 /* behance-dribbble */
 .placeholder__socials {
   position: relative;
   font-size: 1.2vw;
-  margin-top: -1rem;
+  margin-top: -3rem;
   outline: 0 none;
   display: inline-block;
   z-index: 3;
@@ -615,18 +615,6 @@ footer .under hr {
 }
 
 @media only screen and (min-device-width: 481px) and (max-width: 768px) {
-  /* Prelaoder */
-  /* #preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
-      center center;
-  } */
   ::-webkit-scrollbar {
     width: 9px;
   }
@@ -694,12 +682,12 @@ footer .under hr {
     line-height: 4.8rem;
     letter-spacing: -1.5px;
     font-family: "Guardian Ty-Re";
-    margin-top: 8vw;
+    margin-top: 8.8vw;
     text-transform: none;
   }
 
   /* mail */
-  .placeholder-contact {
+  /* .placeholder-contact {
     font-size: 1.6vw;
     margin-top: 1rem;
     text-align: left;
@@ -717,12 +705,12 @@ footer .under hr {
     width: 100%;
     height: 1px;
     background-color: currentColor;
-  }
+  } */
 
   /* behance-dribbble */
   .placeholder__socials {
     position: relative;
-    margin-top: -1.5rem;
+    margin-top: -2rem;
     outline: 0 none;
     display: inline-block;
     z-index: 3;
@@ -733,7 +721,7 @@ footer .under hr {
 
   li {
     margin-bottom: 9vw;
-    font-size: 1.7vw;
+    font-size: 2vw;
     margin-top: 2.6rem;
     padding: 0 8px;
     outline: 0 none;
@@ -970,18 +958,6 @@ footer .under hr {
 }
 
 @media only screen and (max-width: 480px) {
-  /* Prelaoder */
-  /* #preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: var(--bg-color) url("/assets/images/preloader.svg") no-repeat
-      center center;
-  } */
   .h-tape {
     position: absolute;
     left: 23vw;
@@ -1024,7 +1000,7 @@ footer .under hr {
     text-align: left;
     font-size: 4em;
     font-weight: 400;
-    line-height: 3.7rem;
+    line-height: 3.8rem;
     letter-spacing: -0.01px;
     font-family: "Guardian Ty-Re";
     margin-top: 10vw;
@@ -1032,7 +1008,7 @@ footer .under hr {
   }
 
   /* mail */
-  .placeholder-contact {
+  /* .placeholder-contact {
     font-size: 2.7vw;
     margin-top: -0.8rem;
     text-align: left;
@@ -1050,12 +1026,12 @@ footer .under hr {
     width: 100%;
     height: 1px;
     background-color: currentColor;
-  }
+  } */
 
   /* behance-dribbble */
   .placeholder__socials {
     position: relative;
-    margin-top: -1.5rem;
+    margin-top: -2.6rem;
     outline: 0 none;
     display: inline-block;
     z-index: 3;
@@ -1066,7 +1042,7 @@ footer .under hr {
 
   li {
     margin-bottom: 9vw;
-    font-size: 2.7vw;
+    font-size: 3vw;
     letter-spacing: 0.2px;
     margin-top: 2rem;
     padding: 0 8px;
