@@ -18,8 +18,8 @@
       {
         scrollTop: 0,
       },
-      1500,
-      "easeInOutExpo"
+      2000,
+      "easeOutExpo"
     );
     return false;
   });
