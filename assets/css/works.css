@@ -959,9 +959,9 @@ footer .under hr {
 @media only screen and (max-width: 480px) {
   .h-tape {
     position: absolute;
-    left: 26.5vw;
+    left: 27.3vw;
     right: 0%;
-    bottom: -5vw;
+    bottom: -4vw;
     width: 30%;
   }
   svg:not(root) {
