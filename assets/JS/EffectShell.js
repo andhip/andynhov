@@ -32,7 +32,7 @@ class EffectShell {
       0.1,
       100
     );
-    this.camera.position.set(0, 0, 13);
+    this.camera.position.set(0, 0, 12);
 
     //mouse
     this.mouse = new THREE.Vector2();

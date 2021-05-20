@@ -190,7 +190,7 @@ h1 {
 /* SVG Line Path */
 .h-tape {
   position: absolute;
-  left: 23.5vw;
+  left: 26.4vw;
   right: 0%;
   bottom: -3.5vw;
   width: 18%;
@@ -455,7 +455,7 @@ header .p-arrow path {
   }
 }
 #works {
-  padding-top: 15rem !important;
+  padding-top: 14rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -545,7 +545,7 @@ footer {
   height: 0;
 }
 footer#main__footer {
-  padding-top: 12vw;
+  padding-top: 10.5vw;
 }
 footer .under hr {
   margin-top: 0.5em;
@@ -638,7 +638,7 @@ footer .under hr {
 
   .h-tape {
     position: absolute;
-    left: 27vw;
+    left: 31vw;
     right: 0%;
     bottom: -4.3vw;
     width: 21%;
@@ -959,7 +959,7 @@ footer .under hr {
 @media only screen and (max-width: 480px) {
   .h-tape {
     position: absolute;
-    left: 23vw;
+    left: 26.5vw;
     right: 0%;
     bottom: -5vw;
     width: 30%;
