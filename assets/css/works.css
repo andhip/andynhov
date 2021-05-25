@@ -959,9 +959,9 @@ footer .under hr {
 @media only screen and (max-width: 480px) {
   .h-tape {
     position: absolute;
-    left: 26vw;
+    left: 25.8vw;
     right: 0%;
-    bottom: -6.2vw;
+    bottom: -5.9vw;
     width: 32%;
   }
   svg:not(root) {
@@ -1155,7 +1155,7 @@ footer .under hr {
     position: relative;
     font-family: "Le murmure";
     font-size: 20vw;
-    margin-bottom: 10vw;
+    margin-bottom: 11.4vw;
   }
   .text {
     margin-top: -4.6vw;
@@ -1202,7 +1202,7 @@ footer .under hr {
     height: 0;
   }
   footer#main__footer {
-    padding-top: 14vw;
+    padding-top: 12vw;
   }
   footer .under hr {
     margin-top: 0.5em;
