@@ -959,10 +959,10 @@ footer .under hr {
 @media only screen and (max-width: 480px) {
   .h-tape {
     position: absolute;
-    left: 27.3vw;
+    left: 26vw;
     right: 0%;
-    bottom: -4vw;
-    width: 30%;
+    bottom: -6.2vw;
+    width: 32%;
   }
   svg:not(root) {
     overflow: hidden;
@@ -1154,7 +1154,7 @@ footer .under hr {
   .sub-works h2 {
     position: relative;
     font-family: "Le murmure";
-    font-size: 16vw;
+    font-size: 20vw;
     margin-bottom: 10vw;
   }
   .text {
@@ -1169,7 +1169,7 @@ footer .under hr {
     line-height: 4rem;
     color: var(--main-color);
     font-family: "Le murmure";
-    font-size: 14vw;
+    font-size: 16vw;
     letter-spacing: -1px;
   }
   .p-list {
@@ -1202,7 +1202,7 @@ footer .under hr {
     height: 0;
   }
   footer#main__footer {
-    padding-top: 11vw;
+    padding-top: 14vw;
   }
   footer .under hr {
     margin-top: 0.5em;
@@ -1217,7 +1217,7 @@ footer .under hr {
   .foot__btt {
     text-align: left;
     display: flex;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     letter-spacing: -0.03em;
     color: var(--main-color);
   }
@@ -1228,7 +1228,7 @@ footer .under hr {
   .foot__worksinq {
     text-align: right;
     float: right;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     letter-spacing: -0.01em;
     color: var(--main-color);
     margin-top: 1.8vw;
@@ -1253,7 +1253,7 @@ footer .under hr {
   .i-link {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     letter-spacing: -0.01em;
   }
 
@@ -1262,7 +1262,7 @@ footer .under hr {
     position: absolute;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 2.1vw;
+    font-size: 2.4vw;
     line-height: 2.5vw;
     margin-top: 0.25rem;
     float: left;
