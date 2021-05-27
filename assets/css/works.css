@@ -1082,7 +1082,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 128vw;
+    top: 130.3vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1154,7 +1154,7 @@ footer .under hr {
   .sub-works h2 {
     position: relative;
     font-family: "Le murmure";
-    font-size: 20vw;
+    font-size: 19vw;
     margin-bottom: 11.4vw;
   }
   .text {
