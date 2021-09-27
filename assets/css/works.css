@@ -532,7 +532,7 @@ header .p-arrow path {
   -ms-grid-template-columns: 2fr 2fr 2fr;
   grid-gap: 10rem;
   -webkit-grid-gap: 10rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(80px, auto);
   -webkit-grid-auto-rows: minmax(100px, auto);
   -moz-grid-auto-rows: minmax(100px, auto);
   -ms-grid-auto-rows: minmax(100px, auto);
