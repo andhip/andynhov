@@ -478,13 +478,13 @@ header .p-arrow path {
   -webkit-grid-template-columns: 2fr 2fr 2fr;
   -moz-grid-template-columns: 2fr 2fr 2fr;
   -ms-grid-template-columns: 2fr 2fr 2fr;
-  grid-gap: 7rem;
+  grid-gap: 3rem;
   -webkit-grid-gap: 7rem;
   grid-auto-rows: minmax(100px, auto);
   -moz-grid-auto-rows: minmax(100px, auto);
   -webkit-grid-auto-rows: minmax(100px, auto);
   -ms-grid-auto-rows: minmax(100px, auto);
-  margin-bottom: 9vw;
+  margin-bottom: 7vw;
 }
 
 .wrapper > .p-list {
@@ -536,7 +536,7 @@ header .p-arrow path {
   -webkit-grid-auto-rows: minmax(80px, auto);
   -moz-grid-auto-rows: minmax(80px, auto);
   -ms-grid-auto-rows: minmax(80px, auto);
-  margin-bottom: 9vw;
+  /* margin-bottom: 9vw; */
 }
 
 footer {
@@ -880,7 +880,7 @@ footer .under hr {
     -webkit-grid-auto-rows: minmax(80px, auto);
     -moz-grid-auto-rows: minmax(80px, auto);
     -ms-grid-auto-rows: minmax(80px, auto);
-    margin-bottom: 9vw;
+    /* margin-bottom: 9vw; */
   }
 
   footer {
@@ -1193,7 +1193,7 @@ footer .under hr {
     -webkit-grid-auto-rows: minmax(65px, auto);
     -moz-grid-auto-rows: minmax(65px, auto);
     -ms-grid-auto-rows: minmax(65px, auto);
-    margin-bottom: 9vw;
+    /* margin-bottom: 9vw; */
   }
 
   footer {
