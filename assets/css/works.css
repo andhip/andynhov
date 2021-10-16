@@ -352,9 +352,9 @@ a {
   right: 0;
   background-color: #858585da;
   transform-origin: bottom center;
-  transition: transform 0.5s ease-out;
-  -webkit-transition: transform 0.5s ease-out;
-  -moz-transition: transform 0.5s ease-out;
+  transition: transform 0.4s ease-out;
+  -webkit-transition: transform 0.4s ease-out;
+  -moz-transition: transform 0.4s ease-out;
 }
 
 .social__contact:hover:after {
@@ -380,9 +380,9 @@ a {
     right: 0;
     background-color: var(--main-color);
     transform-origin: bottom center;
-    transition: transform 0.5s ease-out;
-    -webkit-transition: transform 0.5s ease-out;
-    -moz-transition: transform 0.5s ease-out;
+    transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    -moz-transition: transform 0.4s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
@@ -674,12 +674,12 @@ footer .under hr {
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
-    transform-origin: bottom right;
+    transform-origin: bottom center;
     transition: transform 0.4s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: bottom center;
   }
 
   header {
@@ -995,12 +995,12 @@ footer .under hr {
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
-    transform-origin: bottom right;
+    transform-origin: bottom center;
     transition: transform 0.4s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: bottom center;
   }
 
   header {
@@ -1070,24 +1070,25 @@ footer .under hr {
   }
 
   .social__contact:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 2px;
-    right: 0;
-    background: #858585da;
-    transition: width 0.7s ease;
-    -webkit-transition: width 0.7s ease;
-    border-radius: 3px;
+   content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 1.6vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #858585da;
+  transform-origin: bottom center;
+  transition: transform 0.4s ease-out;
+  -webkit-transition: transform 0.4s ease-out;
+  -moz-transition: transform 0.4s ease-out;
   }
 
   .social__contact:hover:after {
-    width: 100%;
-    left: 0;
-    margin-left: 0;
-    background: #858585da;
+   transform: scaleX(1);
+    transform-origin: bottom center;
   }
 
   /* arrow */
