@@ -345,7 +345,7 @@ a {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   top: 1.6vw;
   bottom: 0;
   left: 0;
@@ -373,7 +373,7 @@ a {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1px;
     top: 1.6vw;
     bottom: 0;
     left: 0;
@@ -669,8 +669,8 @@ footer .under hr {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    top: 1.6vw;
+    height: 1px;
+    top: 2.6vw;
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
@@ -753,28 +753,27 @@ footer .under hr {
     color: #858585da;
   }
 
- .social__contact:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  top: 1.6vw;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #858585da;
-  transform-origin: bottom center;
-  transition: transform 0.4s ease-out;
-  -webkit-transition: transform 0.4s ease-out;
-  -moz-transition: transform 0.4s ease-out;
-}
+  .social__contact:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    top: 2.6vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #858585da;
+    transform-origin: bottom center;
+    transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    -moz-transition: transform 0.4s ease-out;
+  }
 
-.social__contact:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
-
+  .social__contact:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
 
   #arrow {
     z-index: 2;
@@ -934,11 +933,11 @@ footer .under hr {
     letter-spacing: -0.03em;
     color: var(--main-color);
   }
+
   .foot__mail a {
     text-align: left;
-    font-size: 1.6vw;
-    letter-spacing: -0.02em;
-    color: var(--main-color);
+    font-size: 0px;
+    color: transparent;
   }
 
   .i-list {
@@ -955,7 +954,7 @@ footer .under hr {
   .i-link {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     letter-spacing: -0.01em;
   }
 
@@ -992,8 +991,8 @@ footer .under hr {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    top: 1.6vw;
+    height: 1px;
+    top: 4.3vw;
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
@@ -1072,24 +1071,24 @@ footer .under hr {
   }
 
   .social__contact:after {
-   content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  top: 1.6vw;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #858585da;
-  transform-origin: bottom center;
-  transition: transform 0.4s ease-out;
-  -webkit-transition: transform 0.4s ease-out;
-  -moz-transition: transform 0.4s ease-out;
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    top: 4.1vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #858585da;
+    transform-origin: bottom center;
+    transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    -moz-transition: transform 0.4s ease-out;
   }
 
   .social__contact:hover:after {
-   transform: scaleX(1);
+    transform: scaleX(1);
     transform-origin: bottom center;
   }
 
