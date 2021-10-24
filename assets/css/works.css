@@ -352,9 +352,9 @@ a {
   right: 0;
   background-color: #858585da;
   transform-origin: bottom center;
-  transition: transform 0.4s ease-out;
-  -webkit-transition: transform 0.4s ease-out;
-  -moz-transition: transform 0.4s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
 }
 
 .social__contact:hover:after {
@@ -380,9 +380,9 @@ a {
     right: 0;
     background-color: var(--main-color);
     transform-origin: bottom center;
-    transition: transform 0.4s ease-out;
-    -webkit-transition: transform 0.4s ease-out;
-    -moz-transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
@@ -675,7 +675,7 @@ footer .under hr {
     left: 0;
     background-color: var(--main-color);
     transform-origin: bottom center;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
@@ -765,9 +765,9 @@ footer .under hr {
     right: 0;
     background-color: #858585da;
     transform-origin: bottom center;
-    transition: transform 0.4s ease-out;
-    -webkit-transition: transform 0.4s ease-out;
-    -moz-transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
   }
 
   .social__contact:hover:after {
@@ -997,7 +997,7 @@ footer .under hr {
     left: 0;
     background-color: var(--main-color);
     transform-origin: bottom center;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
   }
   .i-link:hover::after {
     transform: scaleX(1);
@@ -1082,9 +1082,9 @@ footer .under hr {
     right: 0;
     background-color: #858585da;
     transform-origin: bottom center;
-    transition: transform 0.4s ease-out;
-    -webkit-transition: transform 0.4s ease-out;
-    -moz-transition: transform 0.4s ease-out;
+    transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
   }
 
   .social__contact:hover:after {
