@@ -190,20 +190,23 @@ h1 {
 /* SVG Line Path */
 .h-tape {
   position: absolute;
-  left: 26.4vw;
+  text-align: center;
+  top: 14.7rem;
+  left: 14%;
   right: 0%;
   bottom: -3.5vw;
-  width: 18%;
+  width: 70%;
+  opacity: 50%;
 }
 
 @media only screen and (max-width: 1024px) {
-  .h-tape {
+  /* .h-tape {
     position: absolute;
     left: 30vw;
     right: 0%;
     bottom: -3.6vw;
     width: 16%;
-  }
+  } */
 
   /* mail */
   .placeholder-contact {
@@ -268,7 +271,7 @@ header {
   line-height: 5.5rem;
   letter-spacing: -2px;
   font-family: "Guardian Ty-Re";
-  margin-top: 6.5vw;
+  margin-top: 4.6vw;
   text-transform: none;
 }
 
@@ -409,15 +412,15 @@ a {
 /* img-header */
 header img.img-header {
   position: relative;
-  width: 36%;
+  width: 34%;
   height: auto;
   z-index: -3;
   padding-top: 0;
-  margin-top: -18.5rem;
+  margin-top: -15.8rem;
   float: right;
-  margin-right: 5vw;
-  opacity: 80%;
-  animation: nudge 12s linear infinite alternate;
+  margin-right: 4vw;
+  opacity: 0.5;
+  animation: nudge 10s linear infinite alternate;
 }
 
 @keyframes nudge {
@@ -427,12 +430,19 @@ header img.img-header {
   }
 
   50% {
+    transform: translate(0, 40px);
+  }
+
+  50% {
+    transform: translate(0, -40px);
+  }
+  /* 50% {
     transform: translate(60px, 0);
   }
 
   50% {
-    transform: translate(-60px, 0);
-  }
+    transform: translate(-60px, -0);
+  } */
 }
 
 /* arrow */
@@ -483,6 +493,16 @@ header .p-arrow path {
   margin-bottom: 9.5vw;
 }
 
+/* .desc-title {
+  text-align: center;
+}
+
+.desc-title h4 {
+  font-size: 14px;
+  margin-top: -5rem;
+  margin-bottom: 5.5rem;
+  opacity: 0.8;
+} */
 /* ----------------------------------------------------------------------------- 
   # GRID
    -----  ------------------------------------------------------------------------ */
@@ -565,6 +585,12 @@ footer {
 }
 footer#main__footer {
   padding-top: 10.5vw;
+}
+.first__foot__row .foot__btt svg {
+  color: var(--main-color);
+  width: 16px;
+  margin-left: 5px;
+  transform: rotate(-180deg);
 }
 footer .under hr {
   margin-top: 0.5em;
@@ -650,12 +676,15 @@ footer .under hr {
   }
 
   .h-tape {
+    top: 16.5rem;
+  }
+  /* .h-tape {
     position: absolute;
     left: 31vw;
     right: 0%;
     bottom: -4.3vw;
     width: 21%;
-  }
+  } */
   svg:not(root) {
     overflow: hidden;
   }
@@ -811,7 +840,6 @@ footer .under hr {
     margin-top: -12rem;
     float: right;
     margin-right: 4vw;
-    opacity: 80%;
     animation: nudge 12s linear infinite alternate;
   }
   @keyframes nudge {
@@ -972,12 +1000,15 @@ footer .under hr {
 
 @media only screen and (max-width: 480px) {
   .h-tape {
+    top: 16.8rem;
+  }
+  /* .h-tape {
     position: absolute;
     left: 25.8vw;
     right: 0%;
     bottom: -5.9vw;
     width: 32%;
-  }
+  } */
   svg:not(root) {
     overflow: hidden;
   }
