@@ -166,7 +166,10 @@ body:before {
 }
 
 .bradcam_area {
-  background: var(--bg-color);
+  background-color: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 139, 139, 0.082)), to(rgba(36, 35, 35, 0.043)));
+  background: linear-gradient(rgba(139, 139, 139, 0.082), rgba(36, 35, 35, 0.043));
   background-size: cover;
   background-position: bottom;
   padding: 160px 0 137px 0;
@@ -182,12 +185,39 @@ body:before {
 }
 
 .bradcam_area h3 {
-  font-size: 70px;
+  position: relative;
+  font-size: 75px;
+  letter-spacing: -3px;
   line-height: 1;
   color: var(--main-color);
   font-weight: 400;
   margin-bottom: 0;
   font-family: "NF Chimaera Sans", sans-serif;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .bradcam_area h3 {
+    font-size: 56px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .bradcam_area h3 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bradcam_area h3 {
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: "NF Chimaera Sans", sans-serif;
+  }
 }
 
 .bradcam_area p {
@@ -261,7 +291,7 @@ body:before {
 }
 
 .work_details_area .details_catagory_wrap .single_catagory h5.wdt-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--main-color);
   font-weight: 400;
   margin-bottom: 6px !important;
@@ -329,9 +359,17 @@ a:hover {
 }
 
 .work_details_area .details_info .info p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #aab1b7;
+}
+
+@media screen and (max-width: 480px) {
+  .work_details_area .details_info .info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #aab1b7;
+  }
 }
 
 .work_details_area .details_gall_image .grid {

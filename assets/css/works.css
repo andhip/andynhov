@@ -840,8 +840,9 @@ footer .under hr {
     margin-top: -12rem;
     float: right;
     margin-right: 4vw;
-    animation: nudge 12s linear infinite alternate;
+    animation: nudge 10s linear infinite alternate;
   }
+
   @keyframes nudge {
     0%,
     50% {
@@ -849,12 +850,19 @@ footer .under hr {
     }
 
     50% {
-      transform: translate(40px, 0);
+      transform: translate(0, 40px);
     }
 
     50% {
-      transform: translate(-40px, 0);
+      transform: translate(0, -40px);
     }
+    /* 50% {
+      transform: translate(60px, 0);
+    }
+  
+    50% {
+      transform: translate(-60px, -0);
+    } */
   }
 
   /* WORKS */
@@ -1151,8 +1159,9 @@ footer .under hr {
     float: right;
     margin-right: 3vw;
     opacity: 80%;
-    animation: nudge 12s linear infinite alternate;
+    animation: nudge 10s linear infinite alternate;
   }
+
   @keyframes nudge {
     0%,
     50% {
@@ -1160,12 +1169,19 @@ footer .under hr {
     }
 
     50% {
-      transform: translate(40px, 0);
+      transform: translate(0, 40px);
     }
 
     50% {
-      transform: translate(-40px, 0);
+      transform: translate(0, -40px);
     }
+    /* 50% {
+      transform: translate(60px, 0);
+    }
+  
+    50% {
+      transform: translate(-60px, -0);
+    } */
   }
 
   /* WORKS */
@@ -1312,5 +1328,77 @@ footer .under hr {
     line-height: 2.5vw;
     margin-top: 0.25rem;
     float: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .placeholder__socials a {
+    font-size: 1.8vw;
+  }
+  footer .first__foot__row a {
+    font-size: 1.4vw;
+  }
+  footer .foot__worksinq {
+    font-size: 1.4vw;
+  }
+  footer .foot__items a {
+    font-size: 1.3vw;
+  }
+  /* arrow */
+  .p-side {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 45vw;
+    -webkit-transform: translate(0, 140%);
+    -ms-transform: translate(0, 140%);
+    -moz-transform: translate(0, 140%);
+    transform: translate(0, 140%);
+  }
+
+  .text {
+    margin-top: 0;
+    color: var(--main-color);
+    font-family: "NF Chimaera Sans", sans-serif;
+    font-size: 2vw;
+    line-height: 1em;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  /* arrow */
+  .p-side {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 90vw;
+    -webkit-transform: translate(0, 140%);
+    -ms-transform: translate(0, 140%);
+    -moz-transform: translate(0, 140%);
+    transform: translate(0, 140%);
+  }
+  .p-arrow {
+    width: 8vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text {
+    margin-top: 0;
+    color: var(--main-color);
+    font-family: "NF Chimaera Sans", sans-serif;
+    font-size: 2vw;
+    line-height: 1.2em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  /* arrow */
+  .p-side {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 140vw;
+    -webkit-transform: translate(0, 140%);
+    -ms-transform: translate(0, 140%);
+    -moz-transform: translate(0, 140%);
+    transform: translate(0, 140%);
   }
 }
