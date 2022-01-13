@@ -186,7 +186,7 @@ body:before {
 
 .bradcam_area h3 {
   position: relative;
-  font-size: 75px;
+  font-size: 80px;
   letter-spacing: -3px;
   line-height: 1;
   color: var(--main-color);
@@ -361,6 +361,7 @@ a:hover {
 .work_details_area .details_info .info p {
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   color: #aab1b7;
 }
 
@@ -461,6 +462,10 @@ a:hover {
 @media screen and (max-width: 480px) {
   .discuss_projects {
     margin-top: -2rem;
+  }
+  .discuss_projects .project_text h3 {
+    font-size: 26px;
+    letter-spacing: -1px;
   }
 }
 
