@@ -135,7 +135,7 @@ body:before {
   display: none;
   position: fixed;
   z-index: 4 !important;
-  padding-top: 100px;
+  padding-top: 120px;
   left: 0;
   top: 0;
   width: 100%;
@@ -148,7 +148,7 @@ body:before {
     margin: auto;
     display: block;
     cursor: context-menu;
-    width: 38%;
+    width: 36%;
     max-width: 860px;
     animation-name: zoom;
     animation-duration: 0.6s;
@@ -173,7 +173,7 @@ body:before {
 #image-viewer .close {
   position: absolute;
   top: 55px;
-  right: 165px;
+  right: 135px;
   color: #d9d9d9b6;
   font-family: "NF Chimaera Sans";
   font-size: 55px;
