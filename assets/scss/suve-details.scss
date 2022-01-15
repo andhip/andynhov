@@ -262,10 +262,13 @@ body:before {
         opacity: 1;
       }
     }
+
     .close {
-      top: 180px;
+      top: 177px;
       right: 0;
       left: 0;
+      color: #d9d9d9de;
+      font-family: "Le murmure";
     }
   }
   .modal-content {
