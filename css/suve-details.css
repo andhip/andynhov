@@ -235,10 +235,10 @@ body:before {
   position: absolute;
   top: 55px;
   right: 135px;
-  color: #d9d9d9b6;
-  font-family: "NF Chimaera Sans";
-  font-weight: lighter;
-  font-size: 55px;
+  color: #d9d9d9cb;
+  font-family: "Le murmure";
+  font-size: 50px;
+  font-weight: lighter !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 3 !important;
@@ -252,6 +252,7 @@ body:before {
 
 #image-viewer .close:hover,
 #image-viewer .close:focus {
+  font-weight: lighter !important;
   color: var(--main-color);
   text-decoration: none;
   cursor: pointer;
