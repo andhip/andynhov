@@ -167,14 +167,13 @@ body:before {
 
 /* The Modal (background) */
 .details_gall_image img {
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+  cursor: crosshair;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .details_gall_image img:hover {
-  opacity: 0.8;
+  opacity: 0.86;
 }
 
 #image-viewer {
@@ -199,8 +198,8 @@ body:before {
   max-width: 860px;
   -webkit-animation-name: zoom;
           animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   z-index: 4 !important;
 }
 
@@ -238,6 +237,7 @@ body:before {
   right: 135px;
   color: #d9d9d9b6;
   font-family: "NF Chimaera Sans";
+  font-weight: lighter;
   font-size: 55px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -246,7 +246,7 @@ body:before {
 
 .badge,
 .close {
-  font-weight: lighter;
+  font-weight: lighter !important;
   text-shadow: none;
 }
 
@@ -286,8 +286,6 @@ body:before {
     max-width: 480px;
     -webkit-animation-name: zoom;
             animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
     z-index: 4 !important;
   }
   #image-viewer .modal-content:hover {
@@ -306,7 +304,7 @@ body:before {
     display: none;
     position: fixed;
     z-index: 4 !important;
-    padding-top: 240px;
+    padding-top: 235px;
     left: 0;
     top: 0;
     width: 100%;
@@ -319,12 +317,10 @@ body:before {
     margin: auto;
     display: block;
     cursor: context-menu;
-    width: 75%;
+    width: 77%;
     max-width: 480px;
     -webkit-animation-name: zoom;
             animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
     z-index: 4 !important;
   }
   #image-viewer .modal-content:hover {
