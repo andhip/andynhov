@@ -179,7 +179,7 @@ body:before {
 #image-viewer {
   display: none;
   position: fixed;
-  z-index: 4 !important;
+  z-index: 3 !important;
   padding-top: 120px;
   left: 0;
   top: 0;
@@ -200,7 +200,7 @@ body:before {
           animation-name: zoom;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  z-index: 4 !important;
+  z-index: 3 !important;
 }
 
 #image-viewer .modal-content:hover {
@@ -235,7 +235,7 @@ body:before {
   position: absolute;
   top: 55px;
   right: 135px;
-  color: #d9d9d9cb;
+  color: var(--main-color);
   font-family: "Le murmure";
   font-size: 50px;
   font-weight: lighter !important;
@@ -253,7 +253,7 @@ body:before {
 #image-viewer .close:hover,
 #image-viewer .close:focus {
   font-weight: lighter !important;
-  color: var(--main-color);
+  color: #d9d9d9cb;
   text-decoration: none;
   cursor: pointer;
   z-index: 2;
@@ -618,7 +618,7 @@ a:hover {
 }
 
 .discuss_projects {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   z-index: 1;
 }
 
