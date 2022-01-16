@@ -152,6 +152,7 @@ body:before {
     max-width: 860px;
     animation-name: zoom;
     animation-duration: 0.5s;
+    border-radius: 2px;
     z-index: 3 !important;
 
     &:hover {

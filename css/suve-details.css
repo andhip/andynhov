@@ -200,6 +200,7 @@ body:before {
           animation-name: zoom;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  border-radius: 2px;
   z-index: 3 !important;
 }
 
