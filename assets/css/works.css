@@ -398,6 +398,7 @@ a {
   color: var(--main-color);
   font-family: "NF Chimaera Sans", sans-serif;
   font-size: 1vw;
+  letter-spacing: 1px;
   line-height: 1.1em;
 }
 
@@ -412,11 +413,11 @@ a {
 /* img-header */
 header img.img-header {
   position: relative;
-  width: 34%;
+  width: 33%;
   height: auto;
   z-index: -3;
   padding-top: 0;
-  margin-top: -15.8rem;
+  margin-top: -16rem;
   float: right;
   margin-right: 4vw;
   opacity: 0.5;
