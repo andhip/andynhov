@@ -552,7 +552,7 @@ header .p-arrow path {
   position: relative;
   top: 0px;
   left: 0px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .link-list a {
