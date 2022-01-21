@@ -458,9 +458,10 @@ header img.img-header {
   transform: translate(0, 140%);
 }
 .p-arrow {
-  width: 11vh;
+  width: 12vh;
   margin-right: auto;
   margin-left: auto;
+  opacity: 0.8;
 }
 
 header .p-arrow path {
@@ -485,13 +486,13 @@ header .p-arrow path {
   }
 }
 #works {
-  padding-top: 12rem !important;
+  padding-top: 11rem !important;
 }
 .sub-works h2 {
   position: relative;
   font-family: "Le murmure";
-  font-size: 8vw;
-  margin-bottom: 9.5vw;
+  font-size: 8.3vw;
+  margin-bottom: 9.6vw;
 }
 
 /* .desc-title {
@@ -893,7 +894,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 13.5rem !important;
+    padding-top: 12.7rem !important;
   }
   .sub-works h2 {
     position: relative;
@@ -1137,14 +1138,14 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 130.3vw;
+    top: 125vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
     transform: translate(0, 140%);
   }
   .p-arrow {
-    width: 6vh;
+    width: 8vh;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1212,12 +1213,12 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 13.5rem !important;
+    padding-top: 12.8rem !important;
   }
   .sub-works h2 {
     position: relative;
     font-family: "Le murmure";
-    font-size: 19vw;
+    font-size: 19.4vw;
     margin-bottom: 11.4vw;
   }
   .text {
