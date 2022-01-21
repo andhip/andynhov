@@ -1138,7 +1138,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 119vw;
+    top: 115vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1213,7 +1213,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 12.8rem !important;
+    padding-top: 13rem !important;
   }
   .sub-works h2 {
     position: relative;
