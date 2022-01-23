@@ -32,7 +32,7 @@
     $("#image-viewer").show();
   });
 
-  $("#image-viewer .close").click(function () {
+  $("#image-viewer").click(function () {
     $("#image-viewer").hide();
   });
   console.log("image-viewer active");
