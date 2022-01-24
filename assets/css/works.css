@@ -174,31 +174,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.h-wrap {
-  position: relative;
-  bottom: 3vw;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-/* SVG Line Path */
-.h-tape {
-  position: absolute;
-  text-align: center;
-  top: 14.7rem;
-  left: 14%;
-  right: 0%;
-  bottom: -3.5vw;
-  width: 70%;
-  opacity: 50%;
-}
-
 @media only screen and (max-width: 1024px) {
   /* .h-tape {
     position: absolute;
@@ -215,48 +190,6 @@ h1 {
     text-align: left;
     margin-left: 6px;
   }
-
-  /* arrow */
-  .p-side {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 24vw;
-    -webkit-transform: translate(0, 140%);
-    -ms-transform: translate(0, 140%);
-    -moz-transform: translate(0, 140%);
-    transform: translate(0, 140%);
-  }
-  .p-arrow {
-    width: 7vh;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .text {
-    margin-top: 0;
-    color: var(--main-color);
-    font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 1.5vw;
-    line-height: 1.2em;
-  }
-}
-svg:not(root) {
-  overflow: hidden;
-}
-.w-embed::after,
-.w-embed::before {
-  display: table;
-}
-
-/* about */
-#arrow {
-  z-index: 2;
-}
-
-#arrow .p-arrow {
-  transform: translateZ(0.25px) scale(0.75);
-  transform-origin: 50% 100%;
 }
 
 header {
@@ -266,10 +199,10 @@ header {
 .placeholder {
   position: relative;
   text-align: left;
-  font-size: 2.2em;
+  font-size: 2.6em;
   font-weight: 400;
   line-height: 5.5rem;
-  letter-spacing: -2px;
+  letter-spacing: 3px;
   font-family: "Guardian Ty-Re";
   margin-top: 4.6vw;
   text-transform: none;
@@ -413,15 +346,15 @@ a {
 /* img-header */
 header img.img-header {
   position: relative;
-  width: 33%;
+  width: 30%;
   height: auto;
   z-index: -3;
   padding-top: 0;
-  margin-top: -16rem;
+  margin-top: -18rem;
   float: right;
-  margin-right: 4vw;
+  margin-right: 1vw;
   opacity: 0.5;
-  animation: nudge 10s linear infinite alternate;
+  animation: nudge 20s linear infinite alternate;
 }
 
 @keyframes nudge {
@@ -445,20 +378,19 @@ header img.img-header {
     transform: translate(-60px, -0);
   } */
 }
-
 /* arrow */
 .p-side {
   position: absolute;
   right: 0;
   left: 0;
-  top: 31vw;
+  top: 22.5vw;
   -webkit-transform: translate(0, 140%);
   -ms-transform: translate(0, 140%);
   -moz-transform: translate(0, 140%);
   transform: translate(0, 140%);
 }
 .p-arrow {
-  width: 8vh;
+  width: 21vh;
   margin-right: auto;
   margin-left: auto;
   opacity: 0.9;
@@ -486,7 +418,7 @@ header .p-arrow path {
   }
 }
 #works {
-  padding-top: 11rem !important;
+  padding-top: 12rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -505,7 +437,86 @@ header .p-arrow path {
   margin-bottom: 5.5rem;
   opacity: 0.8;
 } */
-/* ----------------------------------------------------------------------------- 
+
+.h-wrap {
+  position: relative;
+  bottom: 3vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* SVG Line Path */
+.h-tape {
+  position: absolute;
+  text-align: center;
+  top: 15.6rem;
+  left: 14%;
+  right: 0%;
+  bottom: -3.5vw;
+  width: 70%;
+  opacity: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* .h-tape {
+    position: absolute;
+    left: 30vw;
+    right: 0%;
+    bottom: -3.6vw;
+    width: 16%;
+  } */
+
+  /* arrow */
+  .p-side {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 24vw;
+    -webkit-transform: translate(0, 140%);
+    -ms-transform: translate(0, 140%);
+    -moz-transform: translate(0, 140%);
+    transform: translate(0, 140%);
+  }
+  .p-arrow {
+    width: 7vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text {
+    margin-top: 0;
+    color: var(--main-color);
+    font-family: "NF Chimaera Sans", sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.2em;
+  }
+}
+svg:not(root) {
+  overflow: hidden;
+}
+.w-embed::after,
+.w-embed::before {
+  display: table;
+}
+
+/* about */
+#arrow {
+  z-index: 2;
+}
+
+#arrow .p-arrow {
+  transform: translateZ(0.25px) scale(0.75);
+  transform-origin: 50% 100%;
+}
+
+/* 
+----------------------------------------------------------------------------- 
   # GRID
    -----  ------------------------------------------------------------------------ */
 .grid {
