@@ -451,17 +451,17 @@ header img.img-header {
   position: absolute;
   right: 0;
   left: 0;
-  top: 27vw;
+  top: 31vw;
   -webkit-transform: translate(0, 140%);
   -ms-transform: translate(0, 140%);
   -moz-transform: translate(0, 140%);
   transform: translate(0, 140%);
 }
 .p-arrow {
-  width: 12vh;
+  width: 8vh;
   margin-right: auto;
   margin-left: auto;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 header .p-arrow path {
