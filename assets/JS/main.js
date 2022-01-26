@@ -18,11 +18,58 @@
       {
         scrollTop: 0,
       },
-      2000,
+      3000,
       "easeOutExpo"
     );
     return false;
   });
+
+  // ------------------------------------------------------------------------------ //
+  // Scrolling-text
+  // ---------------------------------------------------------
+  // jQuery(document).on("scroll", function () {
+  //   $("#scroll__git").css(
+  //     "left",
+  //     Math.max(512 - 0.2 * window.scrollY, 2) + "vw"
+  //   );
+  //   $("#scroll__git2").css(
+  //     "right",
+  //     Math.max(530 - 0.2 * window.scrollY, 2) + "vw"
+  //   );
+  // });
+  // ------------------------------------------------------------------------------ //
+  // /Legals Viewer
+  // ---------------------------------------------------------
+  $(".button").click(function () {
+    var buttonId = $(this).attr("id");
+    $("#modal-container").removeAttr("class").addClass(buttonId);
+    $("body").addClass("modal-active");
+  });
+
+  $("#modal-container").click(function () {
+    $(this).addClass("out");
+    $("body").removeClass("modal-active");
+  });
+
+  // ------------------------------------------------------------------------------ //
+  // Live CLOCK
+  // ---------------------------------------------------------
+  var span = document.getElementById("mod__clock");
+
+  function time() {
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes();
+    var h = d.getHours();
+    span.textContent =
+      ("0" + h).substr(-2) +
+      ":" +
+      ("0" + m).substr(-2) +
+      ":" +
+      ("0" + s).substr(-2);
+  }
+
+  setInterval(time, 1000);
 
   // ------------------------------------------------------------------------------ //
   // Protfolio Viewer

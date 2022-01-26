@@ -240,6 +240,8 @@ header {
   color: var(--main-color);
   font-family: "NF Chimaera Sans", sans-serif;
   text-decoration: none;
+  background: none !important;
+  background-color: none !important;
 }
 
 li {
@@ -310,7 +312,7 @@ a {
     width: 100%;
     transform: scaleX(0);
     height: 1px;
-    top: 1.6vw;
+    top: 1.7vw;
     bottom: 0;
     left: 0;
     right: 0;
@@ -418,7 +420,7 @@ header .p-arrow path {
   }
 }
 #works {
-  padding-top: 12rem !important;
+  padding-top: 13rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -574,7 +576,10 @@ svg:not(root) {
   font-size: 17px;
 }
 
-/* ======= FOOTER ======= */
+/* 
+----------------------------------------------------------------------------- 
+  # FOOTER
+   -----  ------------------------------------------------------------------------ */
 .foot__wrapp {
   display: grid;
   z-index: 3;
@@ -665,6 +670,9 @@ footer .under hr {
   float: left;
 }
 
+/* ================================================
+481 to 768 PX | IPAD
+================================================ */
 @media only screen and (min-device-width: 481px) and (max-width: 768px) {
   ::-webkit-scrollbar {
     width: 9px;
@@ -691,13 +699,7 @@ footer .under hr {
   .h-tape {
     top: 16.5rem;
   }
-  /* .h-tape {
-    position: absolute;
-    left: 31vw;
-    right: 0%;
-    bottom: -4.3vw;
-    width: 21%;
-  } */
+
   svg:not(root) {
     overflow: hidden;
   }
@@ -831,7 +833,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 62vw;
+    top: 72vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -984,14 +986,13 @@ footer .under hr {
   }
 
   .foot__mail a {
-    text-align: left;
-    font-size: 0px;
-    color: transparent;
+    display: none;
+    /* color: transparent !important; */
   }
 
   .i-list {
     clear: both;
-    float: left;
+    float: right;
   }
   .i-item {
     margin-bottom: 0.8vw;
@@ -1000,6 +1001,7 @@ footer .under hr {
     clear: both;
     margin-left: 1em;
   }
+
   .i-link {
     text-decoration: none;
     color: var(--main-color);
@@ -1019,6 +1021,9 @@ footer .under hr {
   }
 }
 
+/* ================================================
+480 MOOBILE 
+================================================ */
 @media only screen and (max-width: 480px) {
   .h-tape {
     top: 16.8rem;
@@ -1149,7 +1154,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 115vw;
+    top: 123vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1308,10 +1313,10 @@ footer .under hr {
     color: var(--main-color);
     margin-top: 1.8vw;
   }
+
   .foot__mail a {
-    text-align: left;
-    font-size: 0px;
-    color: transparent;
+    display: none;
+    /* color: transparent !important; */
   }
 
   .i-list {
@@ -1323,7 +1328,7 @@ footer .under hr {
     float: left;
     position: relative;
     clear: both;
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
   .i-link {
     text-decoration: none;
@@ -1343,6 +1348,10 @@ footer .under hr {
     float: left;
   }
 }
+
+/* ================================================
+768px to 1024px
+================================================ */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .placeholder__socials a {
     font-size: 1.8vw;
@@ -1376,6 +1385,10 @@ footer .under hr {
     line-height: 1em;
   }
 }
+
+/* ================================================
+480px to 640px
+================================================ */
 @media only screen and (min-width: 480px) and (max-width: 640px) {
   /* arrow */
   .p-side {
@@ -1402,6 +1415,10 @@ footer .under hr {
     line-height: 1.2em;
   }
 }
+
+/* ================================================
+320px to 480px
+================================================ */
 @media only screen and (min-width: 320px) and (max-width: 400px) {
   /* arrow */
   .p-side {
