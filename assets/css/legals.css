@@ -74,7 +74,7 @@ min 768
 ================================================ */
 @media only screen and (min-width: 768px) {
   #modal-container .modal {
-    padding: 1rem 13rem 2rem 13rem;
+    padding: 1rem 14rem 2rem 14rem;
   }
 }
 @media only screen and (max-width: 768px) {
