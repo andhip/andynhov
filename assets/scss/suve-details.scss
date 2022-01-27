@@ -288,6 +288,16 @@ body:before {
   // text-transform: capitalize;
   font-family: "NF Chimaera Sans", sans-serif;
   z-index: 2;
+  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .bradcam_area h3 {
@@ -301,7 +311,7 @@ body:before {
 }
 @media screen and (max-width: 480px) {
   .bradcam_area h3 {
-    font-size: 45px;
+    font-size: 49px;
     letter-spacing: -1px;
     line-height: 1;
     color: var(--main-color);

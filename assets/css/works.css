@@ -200,14 +200,13 @@ header {
   position: relative;
   text-align: left;
   font-size: 2.6em;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 5.5rem;
   letter-spacing: 3px;
   font-family: "Guardian Ty-Re";
   margin-top: 4.6vw;
   text-transform: none;
-  visibility: visible;
-  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.5, 2) both;
 }
 
 @keyframes text-clip {
@@ -251,9 +250,7 @@ header {
   color: var(--main-color);
   font-family: "NF Chimaera Sans", sans-serif;
   text-decoration: none;
-  background: none !important;
-  background-color: none !important;
-  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 2) both;
 }
 
 @keyframes text-clip {
