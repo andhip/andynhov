@@ -5,34 +5,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Saol Display";
-  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf4812a614d9c7_SaolDisplay-Regular.woff2") format("woff2"), url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf48d84d14d9c6_SaolDisplay-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Saol Display";
-  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e766bf48468814d9d4_SaolDisplay-ThinItalic.woff2") format("woff2"), url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e71276728eb882b749_SaolDisplay-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Le murmure";
-  src: url("../fonts/Le-Murmure.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Guardian Ty-Re";
-  src: url("../fonts/Guardian Typeface reguler.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
 :root {
   --main-color: #d9d9d9;
   --bg-color: #0f0f0f;
@@ -589,7 +561,8 @@ a:hover {
 }
 
 .work_details_area .details_gall_image .cell {
-  padding: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -794,6 +767,10 @@ a:hover {
 
 footer {
   margin-top: 0;
+  z-index: 1;
+}
+
+footer .foot__wrap {
   z-index: 1;
 }
 

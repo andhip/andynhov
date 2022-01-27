@@ -8,6 +8,18 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Le murmure";
+  src: url("../fonts/Le-Murmure.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Guardian Ty-Re";
+  src: url("../fonts/Guardian\ Typeface\ reguler.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* @font-face {
   font-family: "Saol Display";
   src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf4812a614d9c7_SaolDisplay-Regular.woff2")
       format("woff2"),
@@ -24,19 +36,7 @@
       format("woff");
   font-weight: 100;
   font-style: italic;
-}
-@font-face {
-  font-family: "Le murmure";
-  src: url("../fonts/Le-Murmure.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Guardian Ty-Re";
-  src: url("../fonts/Guardian\ Typeface\ reguler.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
+} */
 
 :root {
   --main-color: #d9d9d9;
@@ -206,6 +206,17 @@ header {
   font-family: "Guardian Ty-Re";
   margin-top: 4.6vw;
   text-transform: none;
+  visibility: visible;
+  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 /* mail */
@@ -242,6 +253,16 @@ header {
   text-decoration: none;
   background: none !important;
   background-color: none !important;
+  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 li {
@@ -348,14 +369,14 @@ a {
 /* img-header */
 header img.img-header {
   position: relative;
-  width: 30%;
+  width: 27%;
   height: auto;
   z-index: -3;
   padding-top: 0;
   margin-top: -18rem;
   float: right;
   margin-right: 1vw;
-  opacity: 0.5;
+  opacity: 0.4;
   animation: nudge 20s linear infinite alternate;
 }
 
@@ -386,6 +407,7 @@ header img.img-header {
   right: 0;
   left: 0;
   top: 22.5vw;
+  background: none !important;
   -webkit-transform: translate(0, 140%);
   -ms-transform: translate(0, 140%);
   -moz-transform: translate(0, 140%);
@@ -397,7 +419,7 @@ header img.img-header {
   margin-left: auto;
   opacity: 0.9;
 }
-
+/* 
 header .p-arrow path {
   -webkit-animation: spin 4s;
   -moz-animation: spin 4s;
@@ -418,7 +440,7 @@ header .p-arrow path {
     margin-left: 350px;
     transform: rotate(360deg);
   }
-}
+} */
 #works {
   padding-top: 13rem !important;
 }
@@ -457,7 +479,7 @@ header .p-arrow path {
 .h-tape {
   position: absolute;
   text-align: center;
-  top: 15.6rem;
+  top: 16.8rem;
   left: 14%;
   right: 0%;
   bottom: -3.5vw;
@@ -637,6 +659,10 @@ footer .under hr {
   font-size: 1.1vw;
   letter-spacing: -0.03em;
   color: var(--main-color);
+}
+
+.foot__mail a {
+  font-size: 1.2vw;
 }
 
 .i-list {
@@ -855,7 +881,7 @@ footer .under hr {
     margin-top: -12rem;
     float: right;
     margin-right: 4vw;
-    animation: nudge 10s linear infinite alternate;
+    animation: nudge 20s linear infinite alternate;
   }
 
   @keyframes nudge {
@@ -1176,8 +1202,8 @@ footer .under hr {
     margin-top: -5.5rem;
     float: right;
     margin-right: 3vw;
-    opacity: 80%;
-    animation: nudge 10s linear infinite alternate;
+    opacity: 0.6;
+    animation: nudge 15s linear infinite alternate;
   }
 
   @keyframes nudge {
@@ -1286,7 +1312,7 @@ footer .under hr {
   }
   footer .under hr {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
@@ -1333,7 +1359,7 @@ footer .under hr {
   .i-link {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 2.8vw;
+    font-size: 3.2vw;
     letter-spacing: -0.01em;
   }
 
