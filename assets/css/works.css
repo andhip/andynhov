@@ -51,8 +51,12 @@
 
 ::-webkit-scrollbar {
   width: 9px;
+  cursor: grab !important;
 }
-
+::-webkit-scrollbar:hover {
+  width: 9px;
+  cursor: grab !important;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(82, 81, 81, 0.432);
@@ -206,7 +210,7 @@ header {
   font-family: "Guardian Ty-Re";
   margin-top: 4.6vw;
   text-transform: none;
-  animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.5, 2) both;
+  animation: text-clip 5s 0.6s cubic-bezier(0.5, 0, 0.5, 2) both;
 }
 
 @keyframes text-clip {
