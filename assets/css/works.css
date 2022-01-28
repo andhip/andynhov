@@ -653,6 +653,51 @@ footer .under hr {
   color: var(--main-color);
 }
 
+.my__legals {
+  text-align: right;
+  margin-right: 3.1rem !important;
+  clear: both;
+}
+.i-link-legals {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.1vw;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .my__legals {
+    text-align: right;
+    margin-right: 3rem !important;
+    clear: both;
+  }
+  .i-link-legals {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.8vw;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .my__legals {
+    text-align: right !important;
+    float: right !important;
+    /* margin-right: 3rem !important; */
+    margin-left: 7.9rem !important;
+    clear: both;
+  }
+  .i-link-legals {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 3.2vw;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
 .foot__mail a {
   font-size: 1.2vw;
 }
@@ -1402,6 +1447,21 @@ footer .under hr {
     font-size: 2vw;
     line-height: 1em;
   }
+
+  /* Legals */
+  .my__legals {
+    margin-left: 10rem !important;
+    margin-right: 0% !important;
+    clear: both;
+  }
+  .i-link-legals {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 3.2vw;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
 }
 
 /* ================================================
@@ -1432,6 +1492,35 @@ footer .under hr {
     font-size: 2vw;
     line-height: 1.2em;
   }
+
+  /* Legals */
+  .my__legals {
+    text-align: right;
+    margin-left: 7rem !important;
+    clear: both;
+  }
+  .i-link-legals {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 2.2vw;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .i-link {
+    font-size: 2.2vw;
+  }
+  .i-copy {
+    font-size: 1.8vw;
+    margin-top: 4px;
+  }
+  .foot__btt {
+    font-size: 1.8vw;
+  }
+  .foot__worksinq {
+    font-size: 1.8vw;
+    margin-bottom: -0.5rem !important;
+  }
 }
 
 /* ================================================
@@ -1448,5 +1537,8 @@ footer .under hr {
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
     transform: translate(0, 140%);
+  }
+  .my__legals {
+    margin-right: 0% !important;
   }
 }

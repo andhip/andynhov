@@ -133,19 +133,31 @@ UNDER 480px
 @media only screen and (max-width: 480px) {
   #modal-container .grid__modal__container {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1rem;
+    grid-template-columns: auto;
+    grid-gap: 5px;
   }
 
   #modal-container .modal {
-    padding: 7px !important;
+    padding: 5px !important;
   }
+
   #modal-container h3 {
     font-size: 3.3vw !important;
     letter-spacing: -0.5px;
     text-align: left;
   }
-
+  #modal-container .modal__col__first {
+    margin-bottom: -3.9rem !important;
+  }
+  #modal-container .modal__col__2nd {
+    margin-bottom: -0.4rem !important;
+  }
+  #modal-container .modal__col__scnd {
+    margin-bottom: -0.5rem !important;
+  }
+  #modal-container .modal__col__4th {
+    margin-bottom: 0.5px !important;
+  }
   #modal-container .mod__sp {
     margin-top: -1rem !important;
   }
@@ -153,7 +165,7 @@ UNDER 480px
     margin-bottom: -1px !important;
   }
   #modal-container .modal-background .mod__legals__desc {
-    margin-top: 2rem;
+    margin-top: 1rem !important;
   }
   #modal-container .modal-background .modal .modal__col__trd p {
     color: var(--bg-color);
