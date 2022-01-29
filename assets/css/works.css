@@ -758,7 +758,7 @@ footer .under hr {
   }
 
   .h-tape {
-    top: 16.5rem;
+    top: 16.9rem;
   }
 
   svg:not(root) {
@@ -894,14 +894,14 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 72vw;
+    top: 68vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
     transform: translate(0, 140%);
   }
   .p-arrow {
-    width: 8vh;
+    width: 10vh;
     margin-right: auto;
     margin-left: auto;
   }
@@ -946,7 +946,7 @@ footer .under hr {
   .wrapper {
     display: grid;
     z-index: 3;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr;
     -webkit-grid-template-columns: 2fr 2fr;
     -moz-grid-template-columns: 2fr 2fr;
     -ms-grid-template-columns: 2fr 2fr;
@@ -960,7 +960,12 @@ footer .under hr {
   }
 
   .wrapper > .p-list {
-    padding: 1em;
+    padding: 0;
+    text-align: left;
+  }
+  .wrapper .p-list:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
   }
 
   .wrapper > .p-list:nth-child(odd) {
@@ -968,12 +973,12 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 12.7rem !important;
+    padding-top: 13rem !important;
   }
   .sub-works h2 {
     position: relative;
     font-family: "Le murmure";
-    font-size: 11vw;
+    font-size: 14.3vw;
     margin-bottom: 11vw;
   }
   .text {
@@ -988,7 +993,7 @@ footer .under hr {
     line-height: 4rem;
     color: var(--main-color);
     font-family: "Le murmure";
-    font-size: 8vw;
+    font-size: 11vw;
     letter-spacing: -0.1px;
   }
 
@@ -1015,7 +1020,7 @@ footer .under hr {
     height: 0;
   }
   footer#main__footer {
-    padding-top: 11vw;
+    padding-top: 6vw;
   }
   footer .under hr {
     margin-top: 0.5em;
@@ -1360,6 +1365,9 @@ footer .under hr {
     font-size: 2.7vw;
     letter-spacing: -0.03em;
     color: var(--main-color);
+  }
+  .first__foot__row .foot__btt svg {
+    width: 14px;
   }
   .first__foot__row {
     display: grid;
