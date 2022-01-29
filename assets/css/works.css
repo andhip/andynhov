@@ -655,7 +655,7 @@ footer .under hr {
 
 .my__legals {
   text-align: right;
-  margin-right: 3.1rem !important;
+  margin-right: 6.9rem !important;
   clear: both;
 }
 .i-link-legals {
@@ -669,7 +669,7 @@ footer .under hr {
 @media screen and (max-width: 768px) {
   .my__legals {
     text-align: right;
-    margin-right: 3rem !important;
+    margin-right: 6.3rem !important;
     clear: both;
   }
   .i-link-legals {
@@ -683,17 +683,17 @@ footer .under hr {
 }
 @media screen and (max-width: 480px) {
   .my__legals {
-    text-align: right !important;
-    float: right !important;
+    text-align: left !important;
+    float: left !important;
     /* margin-right: 3rem !important; */
-    margin-left: 7.9rem !important;
+
     clear: both;
   }
   .i-link-legals {
     text-decoration: none;
     color: var(--main-color);
     font-size: 3.2vw;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -727,9 +727,7 @@ footer .under hr {
   position: absolute;
   color: var(--main-color);
   font-family: "NF Chimaera Sans", sans-serif;
-  font-size: 13px;
-  line-height: 1.1vw;
-  margin-top: 0.25rem;
+  font-size: 1vw;
   float: left;
 }
 
@@ -1077,9 +1075,8 @@ footer .under hr {
     position: absolute;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 1.5vw;
-    line-height: 1.8vw;
-    margin-top: 0.25rem;
+    font-size: 1.7vw;
+    margin-top: 5.1px;
     float: left;
   }
 }
@@ -1401,14 +1398,7 @@ footer .under hr {
   }
 
   .i-copy {
-    text-align: left;
-    position: absolute;
-    color: var(--main-color);
-    font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 2.4vw;
-    line-height: 2.5vw;
-    margin-top: 0.34rem;
-    float: left;
+    display: none;
   }
 }
 
