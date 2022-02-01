@@ -445,12 +445,12 @@ body:before {
     letter-spacing: -1px;
     line-height: 1;
     color: var(--main-color);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
-    font-family: "Opposit";
+    font-family: "NF Chimaera Sans";
   }
   .bradcam_area h3 span {
-    font-family: "Opposit";
+    font-family: "NF Chimaera Sans";
   }
 }
 
@@ -713,8 +713,8 @@ a:hover {
 }
 
 .discuss_projects h3 {
-  font-family: "Opposit";
-  font-weight: 600;
+  font-family: "NF Chimaera Sans";
+  font-weight: 500;
 }
 
 .discuss_projects .project_text .custom-btn {
