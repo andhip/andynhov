@@ -13,6 +13,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Opposit-Regular";
+  src: url("../fonts/Opposit-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --main-color: #d9d9d9;
@@ -319,10 +325,10 @@ body:before {
   font-weight: 500;
   margin-bottom: 0;
   // text-transform: capitalize;
-  font-family: "Opposit" !important;
+  font-family: "Opposit-Regular";
   z-index: 2;
   span {
-    font-family: "Opposit" !important;
+    font-family: "Opposit-Regular";
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
@@ -349,10 +355,10 @@ body:before {
     font-weight: 600;
     margin-bottom: 0;
     // text-transform: capitalize;
-    font-family: "Opposit";
+    font-family: "Opposit-Regular";
 
     span {
-      font-family: "Opposit" !important;
+      font-family: "Opposit-Regular";
     }
   }
 }
@@ -597,7 +603,7 @@ body:before {
   margin-top: 5rem;
   margin-bottom: -1rem;
   h3 {
-    font-family: "Opposit";
+    font-family: "Opposit-Regular";
     font-weight: 600;
   }
 
