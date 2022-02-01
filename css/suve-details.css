@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Opposit";
+  src: url("../fonts/Opposit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --main-color: #d9d9d9;
   --bg-color: #0f0f0f;
@@ -137,6 +144,49 @@ body:before {
   }
 }
 
+.bradcam_area .bradcam_text .hp-1 {
+  -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+          animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+
+@-webkit-keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.bradcam_area .bradcam_text .hp-2 {
+  -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+          animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 /* The Modal (background) */
 .details_gall_image {
   z-index: 9999 !important;
@@ -156,7 +206,7 @@ body:before {
 .details_gall_image #image-viewer {
   display: none;
   position: fixed;
-  z-index: 9999 !important;
+  z-index: 99999 !important;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
   padding-top: 120px;
@@ -350,61 +400,43 @@ body:before {
 
 .bradcam_area h3 {
   position: relative;
+  display: inline;
   font-size: 100px;
-  letter-spacing: -3.5px;
+  letter-spacing: -4.6px;
   line-height: 1;
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 0;
-  font-family: "NF Chimaera Sans", sans-serif;
+  font-family: "Opposit";
   z-index: 2;
-  -webkit-animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: text-clip 5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-@-webkit-keyframes text-clip {
-  from {
-    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes text-clip {
-  from {
-    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .bradcam_area h3 {
-    font-size: 56px;
+    font-size: 70px;
+  }
+  .bradcam_area span {
+    display: inline-block !important;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .bradcam_area h3 {
-    font-size: 56px;
+    display: inline;
+    font-size: 70px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bradcam_area h3 {
+    display: inline;
     font-size: 49px;
     letter-spacing: -1px;
     line-height: 1;
     color: var(--main-color);
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0;
-    font-family: "NF Chimaera Sans", sans-serif;
+    font-family: "Opposit";
   }
 }
 
@@ -566,7 +598,16 @@ a:hover {
   color: #aab1b7;
 }
 
+@media screen and (min-width: 480px) and (max-width: 630px) {
+  .bradcam_area .bradcam_text span {
+    display: inline-block !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  .bradcam_area .bradcam_text span {
+    display: inline-block !important;
+  }
   .work_details_area .details_info .info p {
     font-size: 16px;
     font-weight: 400;
@@ -646,6 +687,11 @@ a:hover {
 .discuss_projects {
   margin-top: 5rem;
   margin-bottom: -1rem;
+}
+
+.discuss_projects h3 {
+  font-family: "Opposit";
+  font-weight: 600;
 }
 
 .discuss_projects .project_text .custom-btn {

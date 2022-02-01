@@ -210,7 +210,83 @@ header {
   font-family: "Guardian Ty-Re";
   margin-top: 4.6vw;
   text-transform: none;
-  animation: text-clip 5s 0.6s cubic-bezier(0.5, 0, 0.5, 1.5) both;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1020px) {
+  .placeholder span.wow {
+    display: inline-block !important;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .placeholder span {
+    display: inline !important;
+  }
+  .placeholder .ph-1 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .placeholder .ph-2 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .placeholder .ph-3 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .placeholder .ph-4 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .placeholder .ph-5 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .placeholder .ph-6 {
+    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
 }
 
 @keyframes text-clip {
@@ -796,13 +872,15 @@ footer .under hr {
     text-align: left;
     font-size: 3.4em;
     font-weight: 400;
-    line-height: 4.8rem;
+    line-height: 5.3rem;
     letter-spacing: -1.5px;
     font-family: "Guardian Ty-Re";
     margin-top: 8.8vw;
     text-transform: none;
   }
-
+  .placeholder span {
+    display: inline;
+  }
   /* mail */
   /* .placeholder-contact {
     font-size: 1.6vw;
@@ -894,7 +972,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 68vw;
+    top: 69vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -965,7 +1043,7 @@ footer .under hr {
   }
   .wrapper .p-list:hover {
     transition: all 0.3s ease-in-out;
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   .wrapper > .p-list:nth-child(odd) {
@@ -1035,7 +1113,7 @@ footer .under hr {
   .foot__btt {
     text-align: left;
     display: flex;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     letter-spacing: -0.03em;
     color: var(--main-color);
   }
@@ -1046,7 +1124,7 @@ footer .under hr {
   .foot__worksinq {
     text-align: right;
     float: right;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     letter-spacing: -0.03em;
     color: var(--main-color);
   }
@@ -1133,6 +1211,7 @@ footer .under hr {
   .placeholder {
     position: relative;
     text-align: left;
+    float: left;
     font-size: 4em;
     font-weight: 400;
     line-height: 3.8rem;
@@ -1140,6 +1219,13 @@ footer .under hr {
     font-family: "Guardian Ty-Re";
     margin-top: 10vw;
     text-transform: none;
+  }
+  .placeholder span {
+    display: inline;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 
   /* mail */
@@ -1414,6 +1500,15 @@ footer .under hr {
 768px to 1024px
 ================================================ */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .placeholder {
+    font-size: 2.7em;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 5rem;
+  }
+  .placeholder span {
+    display: inline;
+  }
   .placeholder__socials a {
     font-size: 1.8vw;
   }
@@ -1431,11 +1526,15 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 45vw;
+    top: 43vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
     transform: translate(0, 140%);
+  }
+
+  .p-arrow {
+    width: 11vw;
   }
 
   .text {
