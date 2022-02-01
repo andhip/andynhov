@@ -319,8 +319,11 @@ body:before {
   font-weight: 500;
   margin-bottom: 0;
   // text-transform: capitalize;
-  font-family: "Opposit";
+  font-family: "Opposit" !important;
   z-index: 2;
+  span {
+    font-family: "Opposit" !important;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   .bradcam_area h3 {
