@@ -438,6 +438,9 @@ body:before {
     margin-bottom: 0;
     font-family: "Opposit";
   }
+  .bradcam_area h3 span {
+    font-family: "Opposit" !important;
+  }
 }
 
 .bradcam_area p {
@@ -681,6 +684,15 @@ a:hover {
   }
   .work_details_area .details_gall_image .grid img {
     width: 95%;
+  }
+  .work_details_area .details_gall_image .grid video {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  video {
+    width: 300px;
   }
 }
 

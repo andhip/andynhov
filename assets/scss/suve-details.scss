@@ -347,6 +347,10 @@ body:before {
     margin-bottom: 0;
     // text-transform: capitalize;
     font-family: "Opposit";
+
+    span {
+      font-family: "Opposit" !important;
+    }
   }
 }
 
@@ -575,9 +579,16 @@ body:before {
     img {
       width: 95%;
     }
+    video {
+      width: 290px;
+    }
   }
 }
-
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  video {
+    width: 300px;
+  }
+}
 // Lets Start Talking
 .discuss_projects {
   margin-top: 5rem;
