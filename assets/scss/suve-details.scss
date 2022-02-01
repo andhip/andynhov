@@ -13,12 +13,12 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "Opposit-Regular";
-  src: url("../fonts/Opposit-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "Opposit-Regular";
+//   src: url("../fonts/Opposit-Regular.ttf") format("ttf");
+//   font-weight: 400;
+//   font-style: normal;
+// }
 
 :root {
   --main-color: #d9d9d9;
@@ -603,10 +603,15 @@ body:before {
   margin-top: 5rem;
   margin-bottom: -1rem;
   h3 {
-    font-family: "NF Chimaera Sans";
+    font-family: "Opposit";
     font-weight: 500;
   }
-
+  @media only screen and (min-width: 600px) {
+    .discuss_projects h3 {
+      font-family: "Opposit";
+      font-weight: 500;
+    }
+  }
   .project_text {
     .custom-btn {
       border: solid 1px var(--main-color);
@@ -660,6 +665,7 @@ body:before {
     h3 {
       font-size: 26px;
       letter-spacing: -0.5px;
+      font-family: "NF Chimaera Sans";
     }
   }
 }
