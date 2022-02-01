@@ -1222,10 +1222,7 @@ footer .under hr {
   }
   .placeholder span {
     display: inline;
-    text-decoration: none;
     width: auto;
-    margin: 0;
-    padding: 0;
   }
 
   /* mail */

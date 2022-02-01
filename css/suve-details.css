@@ -7,7 +7,14 @@
 
 @font-face {
   font-family: "Opposit";
-  src: url("../fonts/Opposit-Regular.woff") format("woff");
+  src: url("../fonts/opposit-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Opposit-Regular";
+  src: url("../fonts/Opposit-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -407,12 +414,12 @@ body:before {
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 0;
-  font-family: "Opposit" !important;
+  font-family: "Opposit";
   z-index: 2;
 }
 
 .bradcam_area h3 span {
-  font-family: "Opposit" !important;
+  font-family: "Opposit";
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
@@ -443,7 +450,7 @@ body:before {
     font-family: "Opposit";
   }
   .bradcam_area h3 span {
-    font-family: "Opposit" !important;
+    font-family: "Opposit";
   }
 }
 
