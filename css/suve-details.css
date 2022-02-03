@@ -362,7 +362,7 @@ body:before {
     display: block;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
-    width: 77%;
+    width: 81%;
     max-width: 480px;
     -webkit-animation-name: zoom;
             animation-name: zoom;
@@ -697,7 +697,7 @@ a:hover {
   }
   .work_details_area .details_gall_image .grid video {
     text-align: center;
-    width: 300px;
+    width: 100%;
   }
 }
 

@@ -272,7 +272,7 @@ body:before {
         margin: auto;
         display: block;
         cursor: zoom-out;
-        width: 77%;
+        width: 81%;
         max-width: 480px;
         animation-name: zoom;
         z-index: 4 !important;
@@ -593,7 +593,7 @@ body:before {
     }
     video {
       text-align: center;
-      width: 300px;
+      width: 100%;
     }
   }
 }
