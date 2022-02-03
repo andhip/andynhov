@@ -9,13 +9,13 @@
   margin-top: -100vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__sv svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -41,13 +41,13 @@
   margin-top: -128vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__mk svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -73,13 +73,13 @@
   margin-top: -95vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__mim svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -105,13 +105,13 @@
   margin-top: -102vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__scj svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -134,16 +134,16 @@
   position: relative;
   width: 150px;
   float: left;
-  margin-top: -100vw;
+  margin-top: -104vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__rdp svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -169,13 +169,13 @@
   margin-top: -99vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__scj-web svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
@@ -201,13 +201,13 @@
   margin-top: -123vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
-  z-index: 1 !important;
+  z-index: 2 !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .read__arrow__aqd svg {
     position: relative;
-    z-index: 1 !important;
+    z-index: 2 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
