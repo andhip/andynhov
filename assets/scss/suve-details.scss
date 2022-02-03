@@ -265,7 +265,7 @@ body:before {
       height: 100%;
       overflow: auto;
       background-color: rgb(0, 0, 0);
-      background-color: rgba(15, 15, 15, 0.76);
+      background-color: rgba(15, 15, 15, 0.74);
       backdrop-filter: blur(4px);
 
       .modal-content {
@@ -528,8 +528,14 @@ body:before {
   }
 }
 @media screen and (max-width: 480px) {
+  .bradcam_area .bradcam_text {
+    margin-top: -1rem !important;
+  }
   .bradcam_area .bradcam_text span {
-    display: inline-block !important;
+    display: block !important;
+    font-size: 15vw;
+    text-align: left !important;
+    margin-left: 2rem;
   }
   .work_details_area .details_info .info p {
     font-size: 16px;
