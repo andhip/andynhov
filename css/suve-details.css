@@ -313,7 +313,9 @@ body:before {
     height: 100%;
     overflow: auto;
     background-color: black;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: rgba(15, 15, 15, 0.774);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
   }
   .details_gall_image #image-viewer .modal-content {
     margin: auto;
@@ -351,7 +353,9 @@ body:before {
     height: 100%;
     overflow: auto;
     background-color: black;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: rgba(15, 15, 15, 0.771);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
   }
   .details_gall_image #image-viewer .modal-content {
     margin: auto;
