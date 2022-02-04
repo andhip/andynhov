@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Guardian Ty-Re";
+  src: url("../fonts/Guardian Typeface reguler.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --main-color: #d9d9d9;
   --bg-color: #0f0f0f;
@@ -215,10 +222,11 @@ body:before {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
   background-color: rgba(15, 15, 15, 0.774);
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .details_gall_image #image-viewer .modal-content {
@@ -312,10 +320,11 @@ body:before {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
     background-color: rgba(15, 15, 15, 0.774);
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
   .details_gall_image #image-viewer .modal-content {
     margin: auto;
@@ -352,10 +361,11 @@ body:before {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
     background-color: rgba(15, 15, 15, 0.74);
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
   .details_gall_image #image-viewer .modal-content {
     margin: auto;
@@ -407,23 +417,24 @@ body:before {
 .bradcam_area h3 {
   position: relative;
   display: inline;
-  font-size: 100px;
-  letter-spacing: -4.6px;
-  line-height: 1;
+  font-size: 61px;
+  letter-spacing: -3px;
+  line-height: 8.1rem;
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 0;
-  font-family: "Opposit";
+  -webkit-font-family: "Guardian Ty-Re";
+  -moz-font-family: "Guardian Ty-Re";
+  -ms-font-family: "Guardian Ty-Re";
+  font-family: "Guardian Ty-Re";
   z-index: 2;
 }
 
-.bradcam_area h3 span {
-  font-family: "Opposit";
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .bradcam_area h3 {
     font-size: 70px;
+    line-height: 5rem;
+    font-family: "NF Chimaera Sans" !important;
   }
   .bradcam_area span {
     display: inline-block !important;
@@ -434,21 +445,19 @@ body:before {
   .bradcam_area h3 {
     display: inline;
     font-size: 70px;
+    line-height: 5rem;
+    font-family: "NF Chimaera Sans" !important;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bradcam_area h3 {
     display: inline;
-    font-size: 49px;
     letter-spacing: -1px;
     line-height: 1;
     color: var(--main-color);
     font-weight: 500;
     margin-bottom: 0;
-    font-family: "NF Chimaera Sans";
-  }
-  .bradcam_area h3 span {
     font-family: "NF Chimaera Sans";
   }
 }
@@ -719,13 +728,13 @@ a:hover {
 }
 
 .discuss_projects h3 {
-  font-family: "Opposit";
+  font-family: "NF Chimaera Sans";
   font-weight: 500;
 }
 
 @media only screen and (min-width: 600px) {
   .discuss_projects .discuss_projects h3 {
-    font-family: "Opposit";
+    font-family: "NF Chimaera Sans";
     font-weight: 500;
   }
 }
