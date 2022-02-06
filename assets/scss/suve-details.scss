@@ -540,7 +540,8 @@ body:before {
     -moz-grid-template-columns: 2fr;
     -ms-grid-template-columns: 2fr;
     grid-gap: 0.6rem;
-
+    padding-left: 5px;
+    padding-right: 5px;
     margin-bottom: 1.5rem;
   }
 }
