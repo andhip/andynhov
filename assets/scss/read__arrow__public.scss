@@ -35,7 +35,7 @@
     position: relative;
     width: 150px;
     float: left;
-    margin-top: -128vw;
+    margin-top: -130vw;
     margin-left: 5.3rem;
     margin-bottom: -12rem;
     z-index: 2 !important;
@@ -95,7 +95,7 @@
     position: relative;
     width: 150px;
     float: left;
-    margin-top: -95vw;
+    margin-top: -98.5vw;
     margin-left: 5.3rem;
     margin-bottom: -12rem;
     z-index: 2 !important;
@@ -125,7 +125,7 @@
     position: relative;
     width: 150px;
     float: left;
-    margin-top: -102vw;
+    margin-top: -96vw;
     margin-left: 5.3rem;
     margin-bottom: -12rem;
     z-index: 2 !important;
@@ -155,7 +155,7 @@
     position: relative;
     width: 150px;
     float: left;
-    margin-top: -104vw;
+    margin-top: -125vw;
     margin-left: 5.3rem;
     margin-bottom: -12rem;
     z-index: 2 !important;
@@ -179,20 +179,20 @@
 }
 
 //============= SCJ-WEB =============
-.read__arrow__scj-web {
+.read__arrow__g-spices {
   margin-bottom: 0 !important;
   svg {
     position: relative;
     width: 150px;
     float: left;
-    margin-top: -99vw;
+    margin-top: -128vw;
     margin-left: 5.3rem;
     margin-bottom: -12rem;
     z-index: 2 !important;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .read__arrow__scj-web svg {
+  .read__arrow__g-spices svg {
     position: relative;
     z-index: 2 !important;
     margin-top: 0 !important;
@@ -200,7 +200,7 @@
   }
 }
 @media screen and (max-width: 950px) {
-  .read__arrow__scj-web {
+  .read__arrow__g-spices {
     display: none;
     svg {
       display: none;

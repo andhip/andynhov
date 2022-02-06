@@ -637,7 +637,7 @@ svg:not(root) {
 
 .wrapper > .p-list:nth-child(odd) {
   background: linear-gradient(
-    rgba(139, 139, 139, 0.055),
+    rgba(139, 139, 139, 0.051),
     rgba(36, 35, 35, 0.048)
   );
 }
