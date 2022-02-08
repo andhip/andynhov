@@ -355,7 +355,7 @@ body:before {
     z-index: 4 !important;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
-    padding-top: 235px;
+    padding-top: 220px;
     left: 0;
     top: 0;
     width: 100%;
@@ -609,6 +609,19 @@ a:hover {
   position: relative;
   text-align: left;
   margin-bottom: 3rem;
+  -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+          animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 .work_details_area .details_info .info {
@@ -662,9 +675,9 @@ a:hover {
   }
   .bradcam_area .bradcam_text span {
     display: block !important;
-    font-size: 15vw;
+    font-size: 15.4vw;
     text-align: left !important;
-    margin-left: 1.5rem;
+    margin-left: 0.8rem;
   }
   .work_details_area .details_info .info p {
     font-size: 16px;
