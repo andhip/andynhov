@@ -897,7 +897,7 @@ footer .under hr {
   .i-link-legals {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 3.2vw;
+    font-size: 3.4vw;
     letter-spacing: -0.02em;
     cursor: pointer;
     transition: all 0.3s;
@@ -1515,7 +1515,7 @@ footer .under hr {
     margin-bottom: 11.4vw;
   }
   .text {
-    margin-top: -3.8vw;
+    margin-top: -4vw;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 3.2vw;
@@ -1574,7 +1574,7 @@ footer .under hr {
   .foot__btt {
     text-align: left;
     display: flex;
-    font-size: 2.7vw;
+    font-size: 3vw;
     letter-spacing: -0.03em;
     color: var(--main-color);
   }
@@ -1588,7 +1588,7 @@ footer .under hr {
   .foot__worksinq {
     text-align: right;
     float: right;
-    font-size: 2.7vw;
+    font-size: 3vw;
     letter-spacing: -0.01em;
     color: var(--main-color);
     margin-top: 1.8vw;
@@ -1613,7 +1613,7 @@ footer .under hr {
   .i-link {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 3.2vw;
+    font-size: 3.4vw;
     letter-spacing: -0.01em;
   }
 
