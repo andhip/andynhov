@@ -585,9 +585,9 @@ Media Screen < 480px
   .section__wcid span {
     text-align: left !important;
     display: inline;
-    font-size: 4.5vw;
+    font-size: 5vw;
     line-height: 2rem;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.9px;
   }
   .section__wcid br {
     display: none;
@@ -1515,10 +1515,10 @@ footer .under hr {
     margin-bottom: 11.4vw;
   }
   .text {
-    margin-top: -4.6vw;
+    margin-top: -3.5vw;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
-    font-size: 2.7vw;
+    font-size: 3.2vw;
     line-height: 1.1em;
   }
 
