@@ -352,7 +352,7 @@ a {
 
 .social__contact {
   position: relative;
-  color: #858585da;
+  color: #858585f6;
 }
 
 .social__contact:after {
@@ -509,8 +509,137 @@ header .p-arrow path {
     transform: rotate(360deg);
   }
 } */
+
+.section__wcid {
+  padding-top: 12rem !important;
+  position: relative;
+  float: center;
+  z-index: -1;
+}
+.section__wcid .child__wcid {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: left !important;
+}
+.section__wcid span {
+  text-align: left !important;
+  display: inline;
+  font-size: 1.8vw;
+  line-height: 2.5rem;
+  letter-spacing: -1px;
+  /* animation: text-clip 2s 0.1s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  } */
+}
+.section__wcid .child__wcid .text__upper {
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
+/* ==============
+Media Screen > 768px
+ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section__wcid {
+    padding-top: 12rem !important;
+    position: relative;
+    float: center;
+    z-index: -1;
+  }
+  .section__wcid .child__wcid {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-align: left !important;
+  }
+  .section__wcid span {
+    text-align: left !important;
+    display: inline;
+    font-size: 1.8vw;
+    line-height: 2.5rem;
+    letter-spacing: -2px;
+  }
+}
+/* ==============
+Media Screen < 480px
+ */
+@media only screen and (max-width: 480px) {
+  .section__wcid {
+    padding-top: 12rem !important;
+    position: relative;
+    text-align: left;
+    z-index: -1;
+  }
+  .section__wcid .child__wcid {
+    display: inline-block;
+    position: relative;
+    text-align: left !important;
+  }
+  .section__wcid span {
+    text-align: left !important;
+    display: inline;
+    font-size: 4.5vw;
+    line-height: 2rem;
+    letter-spacing: -0.7px;
+  }
+  .section__wcid br {
+    display: none;
+  }
+  .section__wcid .child__wcid .text__upper {
+    font-size: 15vw;
+    font-weight: lighter;
+  }
+}
+/* ==============
+Media Screen IPAD
+ */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .section__wcid {
+    padding-top: 10rem !important;
+    position: relative;
+    float: center;
+    z-index: -1;
+  }
+  .section__wcid .child__wcid {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-align: left !important;
+  }
+  .section__wcid span {
+    text-align: left !important;
+    display: inline;
+    font-size: 2.6vw;
+    line-height: 2rem;
+    letter-spacing: -1px;
+    /* animation: text-clip 2s 0.1s cubic-bezier(0.5, 0, 0.5, 1) both;
+  }
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    } */
+  }
+  .section__wcid .child__wcid .text__upper {
+    font-size: 7vw;
+    font-weight: 500;
+  }
+  .section__wcid .child__wcid .text__underUpper {
+    left: 12px;
+  }
+}
+
 #works {
-  padding-top: 13rem !important;
+  padding-top: 11rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -547,7 +676,7 @@ header .p-arrow path {
 .h-tape {
   position: absolute;
   text-align: center;
-  top: 16.8rem;
+  top: 15rem;
   left: 14%;
   right: 0%;
   bottom: -3.5vw;
@@ -834,7 +963,7 @@ footer .under hr {
   }
 
   .h-tape {
-    top: 16.9rem;
+    top: 13.4rem;
   }
 
   svg:not(root) {
@@ -972,14 +1101,14 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 69vw;
+    top: 76vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
     transform: translate(0, 140%);
   }
   .p-arrow {
-    width: 10vh;
+    width: 11vh;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1051,7 +1180,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 13rem !important;
+    padding-top: 9rem !important;
   }
   .sub-works h2 {
     position: relative;
@@ -1169,7 +1298,7 @@ footer .under hr {
 ================================================ */
 @media only screen and (max-width: 480px) {
   .h-tape {
-    top: 16.8rem;
+    top: 10rem;
   }
   /* .h-tape {
     position: absolute;
@@ -1377,7 +1506,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 13rem !important;
+    padding-top: 6rem !important;
   }
   .sub-works h2 {
     position: relative;

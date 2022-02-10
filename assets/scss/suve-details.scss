@@ -560,7 +560,7 @@ body:before {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  color: #aab1b7;
+  color: var(--main-color);
 }
 @media screen and (min-width: 480px) and (max-width: 630px) {
   .bradcam_area .bradcam_text span {
