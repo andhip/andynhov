@@ -521,6 +521,13 @@ header .p-arrow path {
   overflow: hidden;
   position: relative;
   text-align: left !important;
+  padding: 2rem;
+  background: rgba(217, 217, 217, 0.034);
+  background: radial-gradient(
+    circle,
+    rgba(217, 217, 217, 0.025) 0%,
+    rgba(15, 15, 15, 0.144) 100%
+  );
 }
 .section__wcid span {
   text-align: left !important;
@@ -559,7 +566,7 @@ Media Screen < 480px
  */
 @media only screen and (max-width: 480px) {
   .section__wcid {
-    padding-top: 13rem !important;
+    padding-top: 12.5rem !important;
     position: relative;
     text-align: left;
     z-index: -1;
@@ -568,6 +575,7 @@ Media Screen < 480px
     display: inline-block;
     position: relative;
     text-align: left !important;
+    padding: 1rem;
   }
   .section__wcid span {
     text-align: left !important;
