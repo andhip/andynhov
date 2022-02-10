@@ -528,15 +528,6 @@ header .p-arrow path {
   font-size: 1.8vw;
   line-height: 2.5rem;
   letter-spacing: -1px;
-  /* animation: text-clip 2s 0.1s cubic-bezier(0.5, 0, 0.5, 1) both;
-}
-@keyframes text-clip {
-  from {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  } */
 }
 .section__wcid .child__wcid .text__upper {
   font-size: 3vw;
@@ -588,6 +579,8 @@ Media Screen < 480px
     font-size: 5vw;
     line-height: 2rem;
     letter-spacing: -1px;
+    color: var(--main-color);
+    opacity: 0.9;
   }
   .section__wcid br {
     display: none;
@@ -619,15 +612,6 @@ Media Screen IPAD
     font-size: 2.6vw;
     line-height: 2rem;
     letter-spacing: -1px;
-    /* animation: text-clip 2s 0.1s cubic-bezier(0.5, 0, 0.5, 1) both;
-  }
-  @keyframes text-clip {
-    from {
-      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    } */
   }
   .section__wcid .child__wcid .text__upper {
     font-size: 7vw;
@@ -1515,7 +1499,7 @@ footer .under hr {
     margin-bottom: 11.4vw;
   }
   .text {
-    margin-top: -4vw;
+    margin-top: -4.2vw;
     color: var(--main-color);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 3.2vw;
