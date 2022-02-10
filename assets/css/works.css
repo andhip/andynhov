@@ -559,7 +559,7 @@ Media Screen < 480px
  */
 @media only screen and (max-width: 480px) {
   .section__wcid {
-    padding-top: 12rem !important;
+    padding-top: 13rem !important;
     position: relative;
     text-align: left;
     z-index: -1;
@@ -572,8 +572,8 @@ Media Screen < 480px
   .section__wcid span {
     text-align: left !important;
     display: inline;
-    font-size: 5vw;
-    line-height: 2rem;
+    font-size: 4vw;
+    line-height: 1.8rem;
     letter-spacing: -1px;
     color: var(--main-color);
     opacity: 0.86 !important;
