@@ -509,7 +509,7 @@ header .p-arrow path {
     transform: rotate(360deg);
   }
 } */
-
+/* 
 .section__wcid {
   padding-top: 12rem !important;
   position: relative;
@@ -535,12 +535,12 @@ header .p-arrow path {
   font-size: 1.8vw;
   line-height: 2.5rem;
   letter-spacing: -1px;
-}
+} */
 
 /* ==============
 Media Screen > 768px
  */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .section__wcid {
     padding-top: 12rem !important;
     position: relative;
@@ -560,11 +560,11 @@ Media Screen > 768px
     line-height: 2.5rem;
     letter-spacing: -2px;
   }
-}
+} */
 /* ==============
 Media Screen < 480px
  */
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .section__wcid {
     padding-top: 12.5rem !important;
     position: relative;
@@ -589,11 +589,11 @@ Media Screen < 480px
   .section__wcid br {
     display: none;
   }
-}
+} */
 /* ==============
 Media Screen IPAD
  */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* @media only screen and (min-width: 480px) and (max-width: 768px) {
   .section__wcid {
     padding-top: 10rem !important;
     position: relative;
@@ -616,10 +616,10 @@ Media Screen IPAD
   .section__wcid .child__wcid .text__underUpper {
     left: 12px;
   }
-}
+} */
 
 #works {
-  padding-top: 11rem !important;
+  padding-top: 13rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -656,7 +656,7 @@ Media Screen IPAD
 .h-tape {
   position: absolute;
   text-align: center;
-  top: 15rem;
+  top: 16rem;
   left: 14%;
   right: 0%;
   bottom: -3.5vw;
@@ -1081,7 +1081,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 76vw;
+    top: 70vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1278,7 +1278,7 @@ footer .under hr {
 ================================================ */
 @media only screen and (max-width: 480px) {
   .h-tape {
-    top: 10rem;
+    top: 15.5rem;
   }
   /* .h-tape {
     position: absolute;
@@ -1486,7 +1486,7 @@ footer .under hr {
   }
 
   #works {
-    padding-top: 6rem !important;
+    padding-top: 12rem !important;
   }
   .sub-works h2 {
     position: relative;
