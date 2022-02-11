@@ -654,6 +654,11 @@ a:hover {
     padding-right: 5px;
     margin-bottom: 1.5rem;
   }
+  .work_details_area .details_info .info p {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .work_details_area .details_info .info p {
@@ -671,18 +676,13 @@ a:hover {
 
 @media screen and (max-width: 480px) {
   .bradcam_area .bradcam_text {
-    margin-top: -1rem !important;
+    margin-top: -4rem !important;
   }
   .bradcam_area .bradcam_text span {
     display: block !important;
     font-size: 15.4vw;
     text-align: left !important;
     margin-left: 0.8rem;
-  }
-  .work_details_area .details_info .info p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #aab1b7;
   }
 }
 

@@ -225,7 +225,7 @@ header {
     display: inline !important;
   }
   .placeholder .ph-1 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 
   @keyframes text-clip {
@@ -237,7 +237,7 @@ header {
     }
   }
   .placeholder .ph-2 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 
   @keyframes text-clip {
@@ -249,7 +249,7 @@ header {
     }
   }
   .placeholder .ph-3 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 
   @keyframes text-clip {
@@ -261,7 +261,7 @@ header {
     }
   }
   .placeholder .ph-4 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 
   @keyframes text-clip {
@@ -273,7 +273,7 @@ header {
     }
   }
   .placeholder .ph-5 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 
   @keyframes text-clip {
@@ -285,7 +285,7 @@ header {
     }
   }
   .placeholder .ph-6 {
-    animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation: text-clip 3s 0.3s cubic-bezier(0.5, 0, 0.5, 1) both;
   }
 }
 
@@ -746,7 +746,7 @@ svg:not(root) {
 
 .wrapper > .p-list:nth-child(odd) {
   background: linear-gradient(
-    rgba(139, 139, 139, 0.051),
+    rgba(139, 139, 139, 0.035),
     rgba(36, 35, 35, 0.048)
   );
 }
