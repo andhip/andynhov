@@ -8,10 +8,22 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Opposit";
-  src: url("../fonts/opposit-regular-webfont.woff") format("woff");
+  font-family: "Saol Display";
+  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf4812a614d9c7_SaolDisplay-Regular.woff2")
+      format("woff2"),
+    url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf48d84d14d9c6_SaolDisplay-Regular.woff")
+      format("woff");
   font-weight: 400;
   font-style: normal;
+}
+@font-face {
+  font-family: "Saol Display";
+  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e766bf48468814d9d4_SaolDisplay-ThinItalic.woff2")
+      format("woff2"),
+    url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e71276728eb882b749_SaolDisplay-ThinItalic.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: italic;
 }
 @font-face {
   font-family: "Guardian Ty-Re";
@@ -154,7 +166,7 @@ body:before {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(15, 15, 15, 0.774);
+    background-color: rgba(15, 15, 15, 0.754);
     -webkit-backdrop-filter: blur(4px);
     -moz-backdrop-filter: blur(4px);
     -ms-backdrop-filter: blur(4px);
@@ -327,24 +339,27 @@ body:before {
 .bradcam_area h3 {
   position: relative;
   display: inline;
-  font-size: 61px;
+  font-size: 105px;
   letter-spacing: -3px;
-  line-height: 8.1rem;
+  line-height: 7.5rem;
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 0;
+  letter-spacing: -5px;
   // text-transform: capitalize;
-  -webkit-font-family: "Guardian Ty-Re";
-  -moz-font-family: "Guardian Ty-Re";
-  -ms-font-family: "Guardian Ty-Re";
-  font-family: "Guardian Ty-Re";
+  // -webkit-font-family: "Guardian Ty-Re";
+  // -moz-font-family: "Guardian Ty-Re";
+  // -ms-font-family: "Guardian Ty-Re";
+  // font-family: "Guardian Ty-Re";
+  font-family: "Saol Display";
+
   z-index: 2;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .bradcam_area h3 {
     font-size: 70px;
     line-height: 5rem;
-    font-family: "NF Chimaera Sans" !important;
+    font-family: "Saol Display";
   }
   .bradcam_area span {
     display: inline-block !important;
@@ -353,9 +368,9 @@ body:before {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .bradcam_area h3 {
     display: inline;
-    font-size: 70px;
-    line-height: 5rem;
-    font-family: "NF Chimaera Sans" !important;
+    font-size: 88px;
+    line-height: 6rem;
+    font-family: "Saol Display";
   }
 }
 
@@ -368,7 +383,7 @@ body:before {
     font-weight: 500;
     margin-bottom: 0;
     // text-transform: capitalize;
-    font-family: "NF Chimaera Sans";
+    font-family: "Saol Display";
   }
 }
 
@@ -398,12 +413,13 @@ body:before {
 
 .work_details_area .porject_btn {
   .custom-btn {
-    border: solid 1px var(--main-color);
+    // border: solid 1px var(--main-color);
     font-family: "NF Chimaera Sans";
     font-size: 13px;
     text-transform: uppercase;
-    padding: 12px 24px 12px 24px;
+    // padding: 12px 24px 12px 24px;
     background: transparent;
+    border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -416,27 +432,66 @@ body:before {
     color: var(--main-color);
     letter-spacing: 0.5px;
     transition: all 0.3s ease-in-out;
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 0;
+    //   height: 100%;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: -1;
+    //   background-color: var(--main-color);
+    //   transition: all 0.3s ease;
+    // }
+    // &:hover {
+    //   // background-color: var(--main-color);
+    //   color: var(--bg-color);
+    // }
+    // &:hover::after {
+    //   left: 0;
+    //   width: 100%;
+    // }
+    // &:active {
+    //   top: 2px;
+    // }
+
     &::after {
-      position: absolute;
       content: "";
-      width: 0;
-      height: 100%;
-      top: 0;
+      position: absolute;
+      width: 100%;
+      transform: scaleX(1);
+      height: 1px;
+      top: 1.7vw;
+      bottom: 0;
+      left: 0;
       right: 0;
-      z-index: -1;
-      background-color: var(--main-color);
-      transition: all 0.3s ease;
-    }
-    &:hover {
-      // background-color: var(--main-color);
-      color: var(--bg-color);
+      background-color: var(--main-color) !important;
+      transform-origin: bottom center;
+      transition: transform 0.3s ease-out;
+      -webkit-transition: transform 0.3s ease-out;
+      -moz-transition: transform 0.3s ease-out;
     }
     &:hover::after {
-      left: 0;
-      width: 100%;
+      transform: scaleX(0);
+      transform-origin: bottom center;
     }
-    &:active {
-      top: 2px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .single_catagory {
+    button {
+      &::after {
+        margin-top: 0.7rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .work_details_area .single_catagory {
+    button {
+      &::after {
+        margin-top: 1rem;
+      }
     }
   }
 }
@@ -468,12 +523,15 @@ body:before {
 }
 
 .work_details_area .details_catagory_wrap .single_catagory span {
-  font-size: 13px;
-  color: #828793;
+  font-size: 16px;
+  color: #b8bdc7;
   font-weight: 400;
-  font-family: "NF Chimaera Sans", sans-serif;
+  font-family: "Saol Display";
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 1px;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .work_details_area .details_catagory_wrap .single_catagory h5.wdt-desc {
@@ -516,10 +574,34 @@ body:before {
 .work_details_area .details_info .info {
   position: relative;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
-}
 
+  span {
+    display: inline;
+    font-family: "Saol Display";
+    color: var(--main-color);
+    font-size: 2.3vw;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: -1.5px;
+    margin-right: 2px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .details_info .info {
+    span {
+      font-size: 4vw;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .work_details_area .details_info .info {
+    span {
+      font-size: 8vw;
+    }
+  }
+}
 @keyframes text-clip {
   from {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -648,11 +730,29 @@ body:before {
   video {
     width: 300px;
   }
+
+  footer {
+    .i-copy {
+      color: var(--main-color);
+    }
+    .foot__worksinq {
+      color: var(--main-color);
+    }
+  }
 }
 // Lets Start Talking
 .discuss_projects {
   margin-top: 5rem;
   margin-bottom: -1rem;
+
+  .outline_text {
+    font-family: "Saol Display";
+    font-style: italic;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
   h3 {
     font-family: "NF Chimaera Sans";
     font-weight: 500;
@@ -665,12 +765,13 @@ body:before {
   }
   .project_text {
     .custom-btn {
-      border: solid 1px var(--main-color);
+      // border: solid 1px var(--main-color);
       font-family: "NF Chimaera Sans";
-      font-size: 13px;
+      font-size: 15px;
       text-transform: uppercase;
-      padding: 12px 24px 12px 24px;
+      // padding: 12px 24px 12px 24px;
       background: transparent;
+      border: none;
       cursor: pointer;
       transition: all 0.3s ease;
       position: relative;
@@ -682,29 +783,60 @@ body:before {
       margin-top: 5px;
       z-index: 1;
       color: var(--main-color);
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
       transition: all 0.3s ease-in-out;
+      //   &::after {
+      //     position: absolute;
+      //     content: "";
+      //     width: 0;
+      //     height: 100%;
+      //     top: 0;
+      //     right: 0;
+      //     z-index: -1;
+      //     background-color: var(--main-color);
+      //     transition: all 0.3s ease;
+      //   }
+      //   &:hover {
+      //     // background-color: var(--main-color);
+      //     color: var(--bg-color);
+      //   }
+      //   &:hover::after {
+      //     left: 0;
+      //     width: 100%;
+      //   }
+      //   &:active {
+      //     top: 2px;
+      //   }
+      // }
+
       &::after {
-        position: absolute;
         content: "";
-        width: 0;
-        height: 100%;
-        top: 0;
+        position: absolute;
+        width: 100%;
+        transform: scaleX(1);
+        height: 1px;
+        top: 1.7vw;
+        bottom: 0;
+        left: 0;
         right: 0;
-        z-index: -1;
-        background-color: var(--main-color);
-        transition: all 0.3s ease;
-      }
-      &:hover {
-        // background-color: var(--main-color);
-        color: var(--bg-color);
+        background-color: var(--main-color) !important;
+        transform-origin: bottom center;
+        transition: transform 0.3s ease-out;
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
       }
       &:hover::after {
-        left: 0;
-        width: 100%;
+        transform: scaleX(0);
+        transform-origin: bottom center;
       }
-      &:active {
-        top: 2px;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .discuss_projects {
+    button {
+      &::after {
+        margin-top: 0.8rem;
       }
     }
   }
@@ -717,6 +849,12 @@ body:before {
       font-size: 26px;
       letter-spacing: -0.5px;
       font-family: "NF Chimaera Sans";
+    }
+
+    button {
+      &::after {
+        margin-top: 1.1rem;
+      }
     }
   }
 }
@@ -750,6 +888,7 @@ body:before {
     transition: all 0.3s ease-in-out;
     font-size: 12px;
     opacity: 70%;
+    color: var(--main-color) !important;
 
     &:hover {
       opacity: 100%;
@@ -772,6 +911,7 @@ body:before {
     transition: all 0.3s ease-in-out;
     font-size: 12px;
     opacity: 70%;
+    color: var(--main-color) !important;
 
     &:hover {
       opacity: 100%;
@@ -794,6 +934,36 @@ footer {
   margin-top: 0;
   z-index: 2;
 
+  .foot__worksinq {
+    color: var(--main-color);
+  }
+  a {
+    color: var(--main-color) !important;
+  }
+
+  @media (min-width: 991px) {
+    .i-link::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      top: 1.7vw;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--main-color) !important;
+      transform-origin: bottom center;
+      transition: transform 0.3s ease-out;
+      -webkit-transition: transform 0.3s ease-out;
+      -moz-transition: transform 0.3s ease-out;
+    }
+    .i-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom center;
+    }
+  }
+
   .first__foot__row .foot__btt svg {
     color: var(--main-color);
     width: 14px;
@@ -803,6 +973,17 @@ footer {
 }
 @media screen and (max-width: 480px) {
   footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer {
+    margin-top: 5rem;
+    .i-copy {
+      color: var(--main-color);
+    }
+    .foot__worksinq {
+      color: var(--main-color);
+    }
   }
 }

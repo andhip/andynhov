@@ -6,10 +6,17 @@
 }
 
 @font-face {
-  font-family: "Opposit";
-  src: url("../fonts/opposit-regular-webfont.woff") format("woff");
+  font-family: "Saol Display";
+  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf4812a614d9c7_SaolDisplay-Regular.woff2") format("woff2"), url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23df66bf48d84d14d9c6_SaolDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Saol Display";
+  src: url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e766bf48468814d9d4_SaolDisplay-ThinItalic.woff2") format("woff2"), url("https://uploads-ssl.webflow.com/5e7d06bdcdf51b1cff1dbaf7/5e7d23e71276728eb882b749_SaolDisplay-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
@@ -222,7 +229,7 @@ body:before {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(15, 15, 15, 0.774);
+  background-color: rgba(15, 15, 15, 0.754);
   -webkit-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
   -ms-backdrop-filter: blur(4px);
@@ -417,16 +424,14 @@ body:before {
 .bradcam_area h3 {
   position: relative;
   display: inline;
-  font-size: 61px;
+  font-size: 105px;
   letter-spacing: -3px;
-  line-height: 8.1rem;
+  line-height: 7.5rem;
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 0;
-  -webkit-font-family: "Guardian Ty-Re";
-  -moz-font-family: "Guardian Ty-Re";
-  -ms-font-family: "Guardian Ty-Re";
-  font-family: "Guardian Ty-Re";
+  letter-spacing: -5px;
+  font-family: "Saol Display";
   z-index: 2;
 }
 
@@ -434,7 +439,7 @@ body:before {
   .bradcam_area h3 {
     font-size: 70px;
     line-height: 5rem;
-    font-family: "NF Chimaera Sans" !important;
+    font-family: "Saol Display";
   }
   .bradcam_area span {
     display: inline-block !important;
@@ -444,9 +449,9 @@ body:before {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .bradcam_area h3 {
     display: inline;
-    font-size: 70px;
-    line-height: 5rem;
-    font-family: "NF Chimaera Sans" !important;
+    font-size: 88px;
+    line-height: 6rem;
+    font-family: "Saol Display";
   }
 }
 
@@ -458,7 +463,7 @@ body:before {
     color: var(--main-color);
     font-weight: 500;
     margin-bottom: 0;
-    font-family: "NF Chimaera Sans";
+    font-family: "Saol Display";
   }
 }
 
@@ -486,12 +491,11 @@ body:before {
 }
 
 .work_details_area .porject_btn .custom-btn {
-  border: solid 1px var(--main-color);
   font-family: "NF Chimaera Sans";
   font-size: 13px;
   text-transform: uppercase;
-  padding: 12px 24px 12px 24px;
   background: transparent;
+  border: none;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -509,29 +513,44 @@ body:before {
 }
 
 .work_details_area .porject_btn button::after {
-  position: absolute;
   content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  height: 1px;
+  top: 1.7vw;
+  bottom: 0;
+  left: 0;
   right: 0;
-  z-index: -1;
-  background-color: var(--main-color);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.work_details_area .porject_btn button:hover {
-  color: var(--bg-color);
+  background-color: var(--main-color) !important;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
 }
 
 .work_details_area .porject_btn button:hover::after {
-  left: 0;
-  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
-.work_details_area .porject_btn button:active {
-  top: 2px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .single_catagory button::after {
+    margin-top: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .work_details_area .single_catagory button::after {
+    margin-top: 1rem;
+  }
 }
 
 .work_details_area .details_catagory_wrap {
@@ -559,12 +578,15 @@ body:before {
 }
 
 .work_details_area .details_catagory_wrap .single_catagory span {
-  font-size: 13px;
-  color: #828793;
+  font-size: 16px;
+  color: #b8bdc7;
   font-weight: 400;
-  font-family: "NF Chimaera Sans", sans-serif;
+  font-family: "Saol Display";
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 1px;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .work_details_area .details_catagory_wrap .single_catagory h5.wdt-desc {
@@ -608,9 +630,32 @@ a:hover {
 .work_details_area .details_info .info {
   position: relative;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
           animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+
+.work_details_area .details_info .info span {
+  display: inline;
+  font-family: "Saol Display";
+  color: var(--main-color);
+  font-size: 2.3vw;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -1.5px;
+  margin-right: 2px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .details_info .info span {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work_details_area .details_info .info span {
+    font-size: 8vw;
+  }
 }
 
 @keyframes text-clip {
@@ -763,11 +808,25 @@ a:hover {
   video {
     width: 300px;
   }
+  footer .i-copy {
+    color: var(--main-color);
+  }
+  footer .foot__worksinq {
+    color: var(--main-color);
+  }
 }
 
 .discuss_projects {
   margin-top: 5rem;
   margin-bottom: -1rem;
+}
+
+.discuss_projects .outline_text {
+  font-family: "Saol Display";
+  font-style: italic;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .discuss_projects h3 {
@@ -783,12 +842,11 @@ a:hover {
 }
 
 .discuss_projects .project_text .custom-btn {
-  border: solid 1px var(--main-color);
   font-family: "NF Chimaera Sans";
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
-  padding: 12px 24px 12px 24px;
   background: transparent;
+  border: none;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -801,35 +859,44 @@ a:hover {
   margin-top: 5px;
   z-index: 1;
   color: var(--main-color);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .discuss_projects .project_text button::after {
-  position: absolute;
   content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  height: 1px;
+  top: 1.7vw;
+  bottom: 0;
+  left: 0;
   right: 0;
-  z-index: -1;
-  background-color: var(--main-color);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.discuss_projects .project_text button:hover {
-  color: var(--bg-color);
+  background-color: var(--main-color) !important;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
 }
 
 .discuss_projects .project_text button:hover::after {
-  left: 0;
-  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
 
-.discuss_projects .project_text button:active {
-  top: 2px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .discuss_projects button::after {
+    margin-top: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -840,6 +907,9 @@ a:hover {
     font-size: 26px;
     letter-spacing: -0.5px;
     font-family: "NF Chimaera Sans";
+  }
+  .discuss_projects button::after {
+    margin-top: 1.1rem;
   }
 }
 
@@ -879,6 +949,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
   font-size: 12px;
   opacity: 70%;
+  color: var(--main-color) !important;
 }
 
 .prev_project a:hover {
@@ -904,6 +975,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
   font-size: 12px;
   opacity: 70%;
+  color: var(--main-color) !important;
 }
 
 .next_project a:hover {
@@ -929,6 +1001,44 @@ footer {
   z-index: 2;
 }
 
+footer .foot__worksinq {
+  color: var(--main-color);
+}
+
+footer a {
+  color: var(--main-color) !important;
+}
+
+@media (min-width: 991px) {
+  footer .i-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 1px;
+    top: 1.7vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color) !important;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+  }
+  footer .i-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
 footer .first__foot__row .foot__btt svg {
   color: var(--main-color);
   width: 14px;
@@ -939,7 +1049,19 @@ footer .first__foot__row .foot__btt svg {
 
 @media screen and (max-width: 480px) {
   footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  footer {
+    margin-top: 5rem;
+  }
+  footer .i-copy {
+    color: var(--main-color);
+  }
+  footer .foot__worksinq {
+    color: var(--main-color);
   }
 }
 /*# sourceMappingURL=suve-details.css.map */
