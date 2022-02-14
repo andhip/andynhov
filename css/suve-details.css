@@ -821,12 +821,18 @@ a:hover {
   margin-bottom: -1rem;
 }
 
-.discuss_projects .outline_text {
+.discuss_projects .outline_text span {
   font-family: "Saol Display";
   font-style: italic;
   text-transform: none;
   font-weight: 400;
   font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .discuss_projects .ico_smile {
+    font-size: 19px;
+  }
 }
 
 .discuss_projects h3 {
@@ -871,7 +877,7 @@ a:hover {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   height: 1px;
-  top: 1.7vw;
+  top: 1.8vw;
   bottom: 0;
   left: 0;
   right: 0;
@@ -895,7 +901,7 @@ a:hover {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .discuss_projects button::after {
-    margin-top: 0.8rem;
+    margin-top: 1rem;
   }
 }
 
@@ -909,7 +915,13 @@ a:hover {
     font-family: "NF Chimaera Sans";
   }
   .discuss_projects button::after {
-    margin-top: 1.1rem;
+    margin-top: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  button::after {
+    margin-top: 0.8rem;
   }
 }
 

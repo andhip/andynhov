@@ -73,6 +73,10 @@ nav {
   -webkit-text-orientation: upright; */
 }
 @media only screen and (max-width: 480px) {
+  nav {
+    margin-top: 1.6rem;
+    z-index: 9999 !important;
+  }
   .cr_year {
     top: 95.7%;
   }
