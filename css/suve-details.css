@@ -701,7 +701,7 @@ a:hover {
   }
   .work_details_area .details_info .info p {
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 16px !important;
     font-weight: 400;
   }
 }
