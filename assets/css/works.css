@@ -54,16 +54,48 @@ nav {
   position: fixed;
   isolation: isolate;
   z-index: 3;
+  top: 92%;
+  font-size: 15px;
+  margin-right: 0.2rem;
+}
+
+.nav__left_items {
+  padding: 0.2rem;
+  position: fixed;
+  isolation: isolate;
+  float: left;
+  font-size: 15px;
+  margin-left: 1.7rem;
+}
+.nav__name {
+  display: flex;
+  justify-content: left;
+  float: left !important;
+  margin-top: 0.9rem;
+  margin-bottom: -12px;
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
 }
 .cr_year {
   padding: 0.2rem;
   border-radius: 50%;
   position: fixed;
   isolation: isolate;
-  float: right;
+  float: left;
   top: 92%;
   font-size: 15px;
-  margin-right: 0.2rem;
+  margin-right: 12px;
+}
+.nav__lc {
+  padding: 0.2rem;
+  border-radius: 50%;
+  position: fixed;
+  isolation: isolate;
+  float: left;
+  font-size: 15px;
+  margin-right: 11px;
   /* 
   letter-spacing: -4px;
   -ms-writing-mode: tb-rl;
@@ -77,8 +109,26 @@ nav {
     margin-top: 1.6rem;
     z-index: 9999 !important;
   }
-  .cr_year {
+  #switch-theme {
+    padding: 0.2rem;
+    border-radius: 50%;
+    position: fixed;
+    isolation: isolate;
+    font-size: 15px;
+    margin-right: 0.2rem;
+    top: 3% !important;
+  }
+  /* .cr_year {
     top: 95.7%;
+  } */
+  .nav__name {
+    margin-top: 1.1rem;
+  }
+  .cr_year {
+    display: none;
+  }
+  .nav__lc {
+    display: none;
   }
 }
 #switch-theme svg {
@@ -608,7 +658,7 @@ a {
 }
 
 .text {
-  margin-top: 0;
+  margin-top: -0.6rem;
   color: var(--clr-foreground);
   font-family: "NF Chimaera Sans", sans-serif;
   font-size: 1vw;
