@@ -55,11 +55,12 @@ nav {
   background: 0;
   border: 0;
   opacity: 0.8;
-  padding: 0.2rem;
+  padding: 0.1rem;
   border-radius: 50%;
   position: fixed;
+  float: right;
   isolation: isolate;
-  z-index: 3;
+  z-index: 99999;
   top: 92%;
   font-size: 15px;
   margin-right: 0.2rem;
@@ -136,9 +137,10 @@ nav {
     padding: 0.2rem;
     border-radius: 50%;
     position: fixed;
+    float: right;
     isolation: isolate;
     font-size: 15px;
-    margin-right: 0.2rem;
+    margin-right: 0.1rem;
     top: 3% !important;
   }
   /* .cr_year {
