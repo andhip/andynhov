@@ -55,13 +55,13 @@ nav {
   background: 0;
   border: 0;
   opacity: 0.8;
-  padding: 0.1rem;
+  padding: 0.1px;
   border-radius: 50%;
   position: fixed;
   float: right;
   isolation: isolate;
   z-index: 99999;
-  top: 92%;
+  top: 92.4%;
   font-size: 15px;
   margin-right: 0.2rem;
 }
@@ -71,7 +71,6 @@ nav {
   position: fixed;
   isolation: isolate;
   float: left;
-  font-size: 15px;
   margin-left: 1.7rem;
 }
 .nav__name {
@@ -84,9 +83,9 @@ nav {
   margin-top: 0.9rem;
   margin-bottom: -12px;
   margin-left: 12px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
   color: var(--clr-foreground);
 }
 .cr_year {
@@ -96,7 +95,7 @@ nav {
   isolation: isolate;
   float: left;
   top: 92%;
-  font-size: 15px;
+  font-size: 13px;
   margin-right: 12px;
   color: var(--clr-foreground);
 }
@@ -106,7 +105,7 @@ nav {
   position: fixed;
   isolation: isolate;
   float: left;
-  font-size: 15px;
+  font-size: 14px;
   margin-right: 11px;
   color: var(--clr-foreground);
 
@@ -139,7 +138,7 @@ nav {
     float: right;
     isolation: isolate;
     font-size: 15px;
-    margin-top: 0.7rem;
+    margin-top: 0.4rem;
     margin-right: 0.1rem;
     top: 3% !important;
   }
@@ -479,7 +478,7 @@ header {
   line-height: 5.5rem;
   letter-spacing: 3px;
   font-family: "Guardian Ty-Re";
-  margin-top: 3.5vw;
+  margin-top: 3.7vw;
   text-transform: none;
 }
 
@@ -606,7 +605,7 @@ header {
 li {
   margin-bottom: 9vw;
   font-size: 1.1vw;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   padding: 0 8px;
   outline: 0 none;
   display: inline-block;
@@ -717,7 +716,7 @@ header img.img-header {
   float: right;
   margin-right: 1vw;
   opacity: 0.6;
-  animation: nudge 20s linear infinite alternate;
+  animation: nudge 18s linear infinite alternate;
 }
 
 @keyframes nudge {
@@ -933,7 +932,7 @@ header img.img-header {
   right: 0%;
   bottom: -3.5vw;
   width: 70%;
-  opacity: 60%;
+  opacity: 65%;
   z-index: -1;
 }
 

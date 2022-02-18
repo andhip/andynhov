@@ -960,24 +960,22 @@ a:hover {
 }
 
 .prev_project a {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   font-size: 12px;
-  opacity: 75%;
   color: var(--main-color) !important;
 }
 
-.prev_project a:hover {
-  opacity: 100%;
-  transition: all 0.3s ease-in-out;
+.prev_project a span {
+  opacity: 75%;
   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.prev_project a:hover svg {
-  margin-right: 7px;
+.prev_project a span:hover {
+  opacity: 100%;
 }
 
 .prev_project a svg {
+  opacity: 100% !important;
   color: var(--main-color);
   width: 14px;
   margin-right: 5px;
@@ -992,24 +990,22 @@ a:hover {
 }
 
 .next_project a {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   font-size: 12px;
-  opacity: 75%;
   color: var(--main-color) !important;
 }
 
-.next_project a:hover {
-  opacity: 100%;
+.next_project a span {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
+  opacity: 75%;
 }
 
-.next_project a:hover svg {
-  margin-left: 7px;
+.next_project a span:hover {
+  opacity: 100%;
 }
 
 .next_project a svg {
+  opacity: 100%;
   color: var(--main-color);
   width: 14px;
   margin-left: 5px;

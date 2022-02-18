@@ -903,20 +903,20 @@ body:before {
   z-index: 1;
 
   a {
-    transition: all 0.3s ease-in-out;
     font-size: 12px;
-    opacity: 75%;
     color: var(--main-color) !important;
 
-    &:hover {
-      opacity: 100%;
+    span {
+      opacity: 75%;
       transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      svg {
-        margin-right: 7px;
+
+      &:hover {
+        opacity: 100%;
       }
     }
+
     svg {
+      opacity: 100% !important;
       color: var(--main-color);
       width: 14px;
       margin-right: 5px;
@@ -931,20 +931,21 @@ body:before {
   z-index: 1;
 
   a {
-    transition: all 0.3s ease-in-out;
     font-size: 12px;
-    opacity: 75%;
     color: var(--main-color) !important;
 
-    &:hover {
-      opacity: 100%;
+    span {
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
-      svg {
-        margin-left: 7px;
+      opacity: 75%;
+
+      &:hover {
+        opacity: 100%;
       }
     }
+
     svg {
+      opacity: 100%;
       color: var(--main-color);
       width: 14px;
       margin-left: 5px;
