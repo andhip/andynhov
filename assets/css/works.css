@@ -1119,31 +1119,72 @@ footer .under hr {
 }
 
 .my__legals {
-  text-align: right;
-  margin-right: 6.9rem !important;
+  text-align: left;
+  float: left !important;
   clear: both;
 }
 .i-link-legals {
   text-decoration: none;
   font-size: 1.1vw;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.4px;
   cursor: pointer;
   transition: all 0.3s;
   color: var(--clr-foreground);
 }
-@media screen and (max-width: 768px) {
+
+@media (min-width: 991px) {
+  .i-link-legals::after {
+    content: "";
+    position: absolute;
+    width: 22%;
+    transform: scaleX(0);
+    height: 0.1px;
+    top: 1.7vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-foreground);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+  }
+  .i-link-legals:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .my__legals {
-    text-align: right;
-    margin-right: 6.3rem !important;
+    text-align: left !important;
+    float: left !important;
     clear: both;
   }
   .i-link-legals {
     text-decoration: none;
+    font-size: 1.1vw;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--clr-foreground);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my__legals {
+    text-align: left;
+    float: left !important;
+    clear: both;
+  }
+  .i-link-legals {
     color: var(--clr-foreground);
     font-size: 1.8vw;
     letter-spacing: -0.03em;
     cursor: pointer;
     transition: all 0.3s;
+  }
+  .i-link {
+    text-decoration: none !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1600,9 +1641,7 @@ footer .under hr {
     text-align: left;
     padding: 0 3em;
   }
-  header img.img-header {
-    opacity: 1;
-  }
+
   .placeholder {
     position: relative;
     text-align: left;
@@ -1723,7 +1762,7 @@ footer .under hr {
     float: right;
     margin-right: 3vw;
     opacity: 0.6;
-    animation: nudge 15s linear infinite alternate;
+    animation: nudge 18s linear infinite alternate;
   }
 
   @keyframes nudge {
@@ -1945,8 +1984,8 @@ footer .under hr {
 
   /* Legals */
   .my__legals {
-    margin-left: 10rem !important;
-    margin-right: 0% !important;
+    text-align: left !important;
+    float: left !important;
     clear: both;
   }
   .i-link-legals {
@@ -1990,8 +2029,8 @@ footer .under hr {
 
   /* Legals */
   .my__legals {
-    text-align: right;
-    margin-left: 7rem !important;
+    text-align: left !important;
+    float: left !important;
     clear: both;
   }
   .i-link-legals {
@@ -2034,6 +2073,7 @@ footer .under hr {
     transform: translate(0, 140%);
   }
   .my__legals {
-    margin-right: 0% !important;
+    text-align: left !important;
+    float: left !important;
   }
 }

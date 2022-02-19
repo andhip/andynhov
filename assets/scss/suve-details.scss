@@ -745,7 +745,7 @@ body:before {
 }
 // Lets Start Talking
 .discuss_projects {
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: -1rem;
 
   .outline_text {
@@ -754,7 +754,7 @@ body:before {
       font-style: italic;
       text-transform: none;
       font-weight: 400;
-      font-size: 22px;
+      font-size: 33px;
     }
   }
 
@@ -778,6 +778,7 @@ body:before {
       // border: solid 1px var(--main-color);
       font-family: "NF Chimaera Sans";
       font-size: 15px;
+      letter-spacing: 0.7px;
       text-transform: uppercase;
       // padding: 12px 24px 12px 24px;
       background: transparent;
@@ -793,7 +794,6 @@ body:before {
       margin-top: 5px;
       z-index: 1;
       color: var(--main-color);
-      letter-spacing: 0.3px;
       transition: all 0.3s ease-in-out;
       //   &::after {
       //     position: absolute;
@@ -988,6 +988,29 @@ footer {
       -moz-transition: transform 0.3s ease-out;
     }
     .i-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom center;
+    }
+  }
+
+  @media (min-width: 991px) {
+    .i-link-legals::after {
+      content: "";
+      position: absolute;
+      width: 22%;
+      transform: scaleX(0);
+      height: 0.1px;
+      top: 1.7vw;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--clr-foreground);
+      transform-origin: bottom center;
+      transition: transform 0.3s ease-out;
+      -webkit-transition: transform 0.3s ease-out;
+      -moz-transition: transform 0.3s ease-out;
+    }
+    .i-link-legals:hover::after {
       transform: scaleX(1);
       transform-origin: bottom center;
     }

@@ -819,7 +819,7 @@ a:hover {
 }
 
 .discuss_projects {
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: -1rem;
 }
 
@@ -828,7 +828,7 @@ a:hover {
   font-style: italic;
   text-transform: none;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 33px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -852,6 +852,7 @@ a:hover {
 .discuss_projects .project_text .custom-btn {
   font-family: "NF Chimaera Sans";
   font-size: 15px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   background: transparent;
   border: none;
@@ -867,7 +868,6 @@ a:hover {
   margin-top: 5px;
   z-index: 1;
   color: var(--main-color);
-  letter-spacing: 0.3px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1055,6 +1055,36 @@ footer a {
     -moz-transition: transform 0.3s ease-out;
   }
   footer .i-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 991px) {
+  footer .i-link-legals::after {
+    content: "";
+    position: absolute;
+    width: 22%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 0.1px;
+    top: 1.7vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-foreground);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+  }
+  footer .i-link-legals:hover::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     -webkit-transform-origin: bottom center;
