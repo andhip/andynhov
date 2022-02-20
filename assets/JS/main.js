@@ -72,6 +72,23 @@
   setInterval(time, 1000);
 
   // ------------------------------------------------------------------------------ //
+  // Date Day
+  // ---------------------------------------------------------
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const d = new Date();
+  let day = days[d.getDay()];
+  document.getElementById("thisDay").innerHTML = day;
+
+  // ------------------------------------------------------------------------------ //
   // Protfolio Viewer
   // ---------------------------------------------------------
   $(".details_gall_image .responsive-image").click(function () {
