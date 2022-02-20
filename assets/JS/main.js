@@ -72,6 +72,19 @@
   setInterval(time, 1000);
 
   // ------------------------------------------------------------------------------ //
+  // Protfolio Viewer
+  // ---------------------------------------------------------
+  $(".details_gall_image .responsive-image").click(function () {
+    $("#full-image").attr("src", $(this).attr("src"));
+    $("#image-viewer").show();
+  });
+
+  $("#image-viewer").click(function () {
+    $("#image-viewer").hide();
+  });
+  console.log("image-viewer active");
+
+  // ------------------------------------------------------------------------------ //
   // Date Day
   // ---------------------------------------------------------
   const days = [
@@ -87,17 +100,4 @@
   const d = new Date();
   let day = days[d.getDay()];
   document.getElementById("thisDay").innerHTML = day;
-
-  // ------------------------------------------------------------------------------ //
-  // Protfolio Viewer
-  // ---------------------------------------------------------
-  $(".details_gall_image .responsive-image").click(function () {
-    $("#full-image").attr("src", $(this).attr("src"));
-    $("#image-viewer").show();
-  });
-
-  $("#image-viewer").click(function () {
-    $("#image-viewer").hide();
-  });
-  console.log("image-viewer active");
 })(jQuery);

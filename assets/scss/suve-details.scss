@@ -715,6 +715,15 @@ body:before {
     }
   }
 }
+.work_details_area .details_gall_image .grid {
+  video {
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 0;
+    margin-left: -1.2rem;
+    width: 110%;
+  }
+}
 @media screen and (max-width: 480px) {
   .work_details_area .details_gall_image .grid {
     justify-content: center !important;
@@ -724,8 +733,10 @@ body:before {
       width: 100%;
     }
     video {
-      text-align: center;
+      text-align: center !important;
+      justify-content: center !important;
       width: 100%;
+      margin-left: 0;
     }
   }
 }
