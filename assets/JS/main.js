@@ -100,4 +100,13 @@
   const d = new Date();
   let day = days[d.getDay()];
   document.getElementById("thisDay").innerHTML = day;
+
+  // ------------------------------------------------------------------------------ //
+  // Date loc
+  // ---------------------------------------------------------
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // document.write(today);
+  document.getElementById("date_loc").innerHTML = today;
 })(jQuery);

@@ -341,7 +341,12 @@
                                                     </div>
                                                     <div class="modal__col__trd">
                                                         <p class="mod__prod">
-                                                            TimeZone: Southeast Asia (Available)
+                                                            <!-- TimeZone: Southeast Asia (Available) -->
+                                                            <script>
+                                                        var d = (new Date()).toString().split(' ').splice(1,3).join(' ');
+
+document.write(d)
+                                                            </script>
                                                         </p>
                                                         <p>
                                                             <span id="mod__clock"></span>

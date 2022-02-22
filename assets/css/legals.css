@@ -165,7 +165,7 @@ UNDER 480px
     margin-bottom: -1px !important;
   }
   #modal-container .modal-background .mod__legals__desc {
-    margin-top: 1rem !important;
+    margin-top: 0.8rem !important;
   }
   #modal-container .modal-background .modal .modal__col__trd p {
     color: var(--bg-color);
