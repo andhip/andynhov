@@ -4,7 +4,7 @@
     --sc-color: #fade01; */
   --dark-clr: #0f0f0f;
   /* --light-clr: #afadad; */
-  --light-clr: #b1b1b1;
+  --light-clr: #b3b3b3;
   --clr-foreground: var(--dark-clr); /*hsl(0 0% 0%);*/
   --clr-background: var(--light-clr);
 }
@@ -60,7 +60,7 @@ nav {
   position: fixed;
   float: right;
   isolation: isolate;
-  z-index: 99999;
+  z-index: 4;
   top: 91.4%;
   font-size: 15px;
   margin-right: 0.2rem;
@@ -1144,7 +1144,7 @@ footer .under hr {
   .i-link-legals::after {
     content: "";
     position: absolute;
-    width: 22%;
+    width: 21.7%;
     transform: scaleX(0);
     height: 0.1px;
     top: 1.7vw;

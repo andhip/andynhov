@@ -104,9 +104,7 @@
   // ------------------------------------------------------------------------------ //
   // Date loc
   // ---------------------------------------------------------
-  var today = new Date();
-  today.setHours(0, 0, 0, 0);
+  var today = new Date().toString().split(" ").splice(1, 3).join(" ");
 
-  // document.write(today);
   document.getElementById("date_loc").innerHTML = today;
 })(jQuery);

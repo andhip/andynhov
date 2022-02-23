@@ -794,8 +794,8 @@ a:hover {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   margin-right: 0;
-  margin-left: -1.2rem;
-  width: 110%;
+  margin-left: -7rem;
+  width: 150%;
 }
 
 @media screen and (max-width: 480px) {
@@ -822,7 +822,13 @@ a:hover {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   video {
-    width: 300px;
+    width: 155% !important;
+    text-align: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-right: 5px !important;
+    margin-left: -70px !important;
   }
   footer .i-copy {
     color: var(--main-color);
