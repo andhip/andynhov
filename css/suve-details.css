@@ -986,8 +986,8 @@ a:hover {
 
 .prev_project a span {
   opacity: 75%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .prev_project a span:hover {
@@ -1003,6 +1003,10 @@ a:hover {
           transform: rotate(90deg);
 }
 
+.prev_project a:hover span {
+  opacity: 100%;
+}
+
 .next_project {
   margin-left: 1.5rem;
   margin-bottom: 0;
@@ -1015,8 +1019,8 @@ a:hover {
 }
 
 .next_project a span {
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   opacity: 75%;
 }
 
@@ -1031,6 +1035,10 @@ a:hover {
   margin-left: 5px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.next_project a:hover span {
+  opacity: 100%;
 }
 
 @media screen and (max-width: 480px) {

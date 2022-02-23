@@ -923,7 +923,8 @@ body:before {
 
     span {
       opacity: 75%;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
 
       &:hover {
         opacity: 100%;
@@ -936,6 +937,12 @@ body:before {
       width: 14px;
       margin-right: 5px;
       transform: rotate(90deg);
+    }
+
+    &:hover {
+      span {
+        opacity: 100%;
+      }
     }
   }
 }
@@ -950,8 +957,8 @@ body:before {
     color: var(--main-color) !important;
 
     span {
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
       opacity: 75%;
 
       &:hover {
@@ -965,6 +972,12 @@ body:before {
       width: 14px;
       margin-left: 5px;
       transform: rotate(-90deg);
+    }
+
+    &:hover {
+      span {
+        opacity: 100%;
+      }
     }
   }
 }
