@@ -486,7 +486,7 @@ header {
   line-height: 5.5rem;
   letter-spacing: 3px;
   font-family: "Guardian Ty-Re";
-  margin-top: 3.7vw;
+  margin-top: 3.8vw;
   text-transform: none;
 }
 
@@ -600,9 +600,8 @@ header {
 /* behance-dribbble */
 .placeholder__socials {
   position: relative;
-  margin-top: -3rem;
   outline: 0 none;
-  display: inline-block;
+  margin-top: -0.5rem;
   z-index: 3;
   color: var(--clr-foreground);
   font-family: "NF Chimaera Sans", sans-serif;
@@ -613,7 +612,6 @@ header {
 li {
   margin-bottom: 9vw;
   font-size: 1.1vw;
-  margin-top: 1rem;
   padding: 0 8px;
   outline: 0 none;
   display: inline-block;
