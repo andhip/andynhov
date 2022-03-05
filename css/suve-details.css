@@ -201,9 +201,68 @@ body:before {
   }
 }
 
+#nav__port {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+#nav__port span {
+  z-index: 4 !important;
+  color: var(--main-color);
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+#nav__port span a {
+  color: var(--main-color);
+  opacity: 0.9;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#nav__port span a:hover {
+  opacity: 1;
+}
+
+#nav__port .nav__p_name {
+  margin-top: 2.2rem;
+  margin-left: 2.7rem;
+  display: block;
+  float: left;
+}
+
+#nav__port .nav__p__lc {
+  float: right;
+  margin-top: 2.1rem;
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #nav__port {
+    z-index: 3;
+  }
+  #nav__port span {
+    font-size: 12px;
+  }
+  #nav__port span a {
+    font-size: 12px;
+  }
+  #nav__port .nav__p__lc {
+    margin-top: 2.7rem;
+    margin-right: 2.7rem;
+  }
+}
+
 /* The Modal (background) */
 .details_gall_image {
-  z-index: 9999 !important;
+  z-index: 99999 !important;
   margin-bottom: -2rem;
 }
 
@@ -220,10 +279,10 @@ body:before {
 .details_gall_image #image-viewer {
   display: none;
   position: fixed;
-  z-index: 100% !important;
+  z-index: 4 !important;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-  padding-top: 120px;
+  padding-top: 128px;
   left: 0;
   top: 0;
   width: 100%;
@@ -249,7 +308,7 @@ body:before {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   border-radius: 2px;
-  z-index: 9999 !important;
+  z-index: 99999 !important;
 }
 
 .details_gall_image #image-viewer .modal-content:hover {
@@ -282,15 +341,15 @@ body:before {
 
 .details_gall_image #image-viewer .close {
   position: absolute;
-  top: 55px;
-  right: 135px;
+  top: 65px;
+  right: 250px;
   color: var(--main-color);
   font-family: "Le murmure";
-  font-size: 35px;
+  font-size: 38px;
   font-weight: lighter !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 3 !important;
+  z-index: 4 !important;
 }
 
 .details_gall_image .badge,
@@ -305,7 +364,7 @@ body:before {
   color: #d9d9d9cb;
   text-decoration: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media only screen and (max-width: 700px) {
@@ -356,6 +415,12 @@ body:before {
 }
 
 @media screen and (max-width: 480px) {
+  .details_gall_image .details_gall_image {
+    z-index: 2 !important;
+  }
+  .details_gall_image .details_gall_image img {
+    z-index: 1 !important;
+  }
   .details_gall_image #image-viewer {
     display: none;
     position: fixed;
@@ -794,8 +859,8 @@ a:hover {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   margin-right: 0;
-  margin-left: -7rem;
-  width: 150%;
+  margin-left: -9.2rem;
+  width: 165%;
 }
 
 @media screen and (max-width: 480px) {
