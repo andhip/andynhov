@@ -1,25 +1,42 @@
 !(function ($) {
   "use strict";
 
-  const preloader = document.querySelector(".preloader");
+  let splash = document.querySelector(".splash");
 
-  const fadeEffect = setInterval(() => {
-    // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-    if (!preloader.style.opacity) {
-      preloader.style.opacity = 1;
-    }
-    if (preloader.style.opacity > 0) {
-      preloader.style.opacity -= 0.1;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 100);
+  function loadPage() {
+    let html = "";
+    let splashTitle = document.querySelector(".splash-title");
+    let splashTitleArray = splashTitle.innerText.split("");
+    splashTitleArray.forEach((letter) => {
+      html += `<span>${letter}</span>`;
+    });
+    splashTitle.innerHTML = html;
 
-  //   $(window).on("load", function () {
-  //     $("#preloader")
-  //       .delay(100)
-  //       .fadeOut("slow", function () {
-  //         $(this).remove();
-  //       });
-  //   });
+    [...splashTitle.querySelectorAll("span")].forEach((span, idx) => {
+      setTimeout(() => {
+        span.style.transform = "translateY(0px)";
+      }, (idx + 1) * 50);
+    });
+
+    setTimeout(() => {
+      splash.classList.add("active");
+
+      setTimeout(() => {
+        body.style.transform = `translateY(0px)`;
+        body.style.opacity = 1;
+        splash.style.display = "none";
+        splash.style.transition = "0.3s";
+      }, 900);
+    }, 2000);
+  }
+
+  $(window).on("load", function () {
+    $("#splash")
+      .delay(1200)
+      .fadeOut("slow", function () {
+        $(this).remove();
+      });
+  });
+
+  loadPage();
 })(jQuery);

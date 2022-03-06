@@ -2,9 +2,9 @@
   /*   --main-color: #d9d9d9;
     --bg-color: #0f0f0f;
     --sc-color: #fade01; */
-  --dark-clr: #0f0f0f;
+  --dark-clr: #141414;
   /* --light-clr: #afadad; */
-  --light-clr: #b3b3b3;
+  --light-clr: #b6b6b6;
   --clr-foreground: var(--dark-clr); /*hsl(0 0% 0%);*/
   --clr-background: var(--light-clr);
 }
@@ -147,8 +147,8 @@ nav {
     isolation: isolate;
     font-size: 15px;
     margin-top: 0.4rem;
-    margin-right: 0.1rem;
-    top: 3% !important;
+    margin-right: -7px;
+    top: 93.5% !important;
   }
   /* .cr_year {
     top: 95.7%;

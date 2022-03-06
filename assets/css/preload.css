@@ -3,77 +3,47 @@
   --bg-color: #0f0f0f;
 }
 
-.preloader {
+.splash {
   display: block;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  /* background: #0f0f0f url(../images/preloader.svg) no-repeat center center; */
   background: var(--bg-color);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999 !important;
-  pointer-events: none;
-  transition: opacity 0.3s linear;
-  -webkit-transition: opacity 0.3s linear;
-  -moz-transition: opacity 0.3s linear;
+  z-index: 99999;
+  padding: 2rem;
+  justify-content: flex-end;
+  color: var(--main-color);
 }
 
-@media only screen and (max-width: 768) {
-  .preloader {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    /* background: #0f0f0f url(../images/preloader.svg) no-repeat center center; */
-    background: var(--bg-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999 !important;
-    pointer-events: none;
-    transition: opacity 0.3s linear;
-    -webkit-transition: opacity 0.3s linear;
-    -moz-transition: opacity 0.3s linear;
-  }
+.splash.active {
+  opacity: 0;
+  transition: 0.5s;
 }
-/* @media (min-width: 768) {
-  .preloader {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background: #0f0f0f url(../images/preloader.svg) no-repeat center center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999 !important;
-    pointer-events: none;
-    transition: opacity 0.3s linear;
-    -webkit-transition: opacity 0.3s linear;
-    -moz-transition: opacity 0.3s linear;
-  }
-} */
-@media only screen and (max-width: 480px) {
-  .preloader {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    /* background: #0f0f0f url(../images/preloader.svg) no-repeat center center; */
-    background: var(--bg-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    pointer-events: none;
-    transition: opacity 0.3s linear;
-    -webkit-transition: opacity 0.3s linear;
-    -moz-transition: opacity 0.3s linear;
-  }
+
+.splash-title-container {
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden !important;
 }
+
+.splash-title {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--main-color);
+  text-transform: none;
+  overflow: hidden !important;
+}
+
+.splash-title span {
+  display: inline-block;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+/* ===========preload overlay ============= */
