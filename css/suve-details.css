@@ -249,10 +249,10 @@ body:before {
     z-index: 3;
   }
   #nav__port span {
-    font-size: 12px;
+    font-size: 14px;
   }
   #nav__port span a {
-    font-size: 12px;
+    font-size: 14px;
   }
   #nav__port .nav__p__lc {
     margin-top: 2.7rem;
@@ -788,7 +788,7 @@ a:hover {
 
 @media screen and (max-width: 480px) {
   .bradcam_area .bradcam_text {
-    margin-top: -4rem !important;
+    margin-top: -2rem !important;
   }
   .bradcam_area .bradcam_text span {
     display: block !important;

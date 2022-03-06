@@ -2,11 +2,12 @@
   /*   --main-color: #d9d9d9;
     --bg-color: #0f0f0f;
     --sc-color: #fade01; */
-  --dark-clr: #141414;
+  --dark-clr: #161616;
   /* --light-clr: #afadad; */
   --light-clr: #b6b6b6;
   --clr-foreground: var(--dark-clr); /*hsl(0 0% 0%);*/
   --clr-background: var(--light-clr);
+  --thrd-clr: #424242;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -101,7 +102,6 @@ nav {
 }
 .nav__lc {
   padding: 0.2rem;
-  border-radius: 50%;
   position: fixed;
   isolation: isolate;
   float: left;
@@ -132,42 +132,53 @@ nav {
     -moz-display: flex;
     -ms-display: flex;
     justify-content: right;
-    -webkit-justify-content: flex;
-    -moz-justify-content: flex;
-    -ms-justify-content: flex;
+    -webkit-justify-content: right;
+    -moz-justify-content: right;
+    -ms-justify-content: right;
+    float: right;
   }
   nav {
     z-index: 9999 !important;
   }
   #switch-theme {
-    padding: 0.2rem;
+    display: none;
+    /* padding: 0.2rem;
     border-radius: 50%;
     position: fixed;
     display: block;
     isolation: isolate;
     font-size: 15px;
     margin-top: 0.4rem;
-    margin-right: -7px;
-    top: 93.5% !important;
+    margin-right: 0.1rem;
+    top: 3% !important; */
   }
   /* .cr_year {
     top: 95.7%;
   } */
   .nav__name {
-    display: none;
-    /* -webkit-display: flex;
+    -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;
+    justify-content: left;
     -webkit-justify-content: left;
+    float: left;
     -webkit-float: left !important;
-    margin-top: 1.2rem;
-    letter-spacing: -0.1px; */
+    margin-top: 2.2rem;
+    letter-spacing: -0.1px;
+    font-size: 14px;
   }
   .cr_year {
     display: none;
   }
   .nav__lc {
-    display: none;
+    padding: 0.2rem;
+    position: fixed;
+    isolation: isolate;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-right: 7px;
+    margin-top: 4.5px;
   }
 }
 #switch-theme svg {
@@ -1022,12 +1033,8 @@ svg:not(root) {
   padding: 1em;
   border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(
-      to bottom,
-      var(--clr-foreground),
-      rgba(0, 0, 0, 0)
-    )
-    1 100%;
+  border-image: linear-gradient(to bottom, var(--thrd-clr), rgba(0, 0, 0, 0)) 1
+    100%;
 }
 
 /* .wrapper > .p-list:nth-child(odd) {

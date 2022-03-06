@@ -186,10 +186,10 @@ body:before {
     z-index: 3;
 
     span {
-      font-size: 12px;
+      font-size: 14px;
 
       a {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
     .nav__p__lc {
@@ -723,7 +723,7 @@ body:before {
 }
 @media screen and (max-width: 480px) {
   .bradcam_area .bradcam_text {
-    margin-top: -4rem !important;
+    margin-top: -2rem !important;
   }
   .bradcam_area .bradcam_text span {
     display: block !important;
