@@ -25,25 +25,6 @@
   });
 
   // ------------------------------------------------------------------------------ //
-  // SPLASH-TEXT
-  // ---------------------------------------------------------
-  // function letSplash() {
-  //   let html = "";
-  //   let splashTitle = document.querySelector(".splash__header");
-  //   let splashTitleArray = splashTitle.innerText.split("");
-  //   splashTitleArray.forEach((letter) => {
-  //     html += `<span>${letter}</span>`;
-  //   });
-  //   splashTitle.innerHTML = html;
-
-  //   [...splashTitle.querySelectorAll("span")].forEach((span, idx) => {
-  //     setTimeout(() => {
-  //       span.style.transform = "translateY(0px)";
-  //     }, (idx + 1) * 50);
-  //   });
-  // }
-  // letSplash();
-  // ------------------------------------------------------------------------------ //
   // Scrolling-text
   // ---------------------------------------------------------
   // jQuery(document).on("scroll", function () {

@@ -176,8 +176,8 @@ nav {
     isolation: isolate;
     float: left;
     font-size: 14px;
-    letter-spacing: 0.3px;
-    margin-right: 7px;
+    letter-spacing: 0.2px;
+    margin-right: 5px;
     margin-top: 4.5px;
   }
 }
@@ -306,6 +306,11 @@ nav {
       format("woff");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "ivar";
+  src: url(../fonts/IvarDisplayCondensed-Light.woff2) format("woff2");
 }
 @font-face {
   font-family: "Le murmure";
@@ -709,7 +714,7 @@ a {
   margin-top: -0.6rem;
   color: var(--clr-foreground);
   font-family: "NF Chimaera Sans", sans-serif;
-  font-size: 1vw;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.1em;
 }
@@ -721,7 +726,38 @@ a {
   font-family: "Le murmure";
   font-size: 6vw;
 }
-
+@media only screen and (min-width: 768px) {
+  span.num__title {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .text {
+    margin-top: -2rem !important;
+  }
+  h1.num__title {
+    display: inline;
+  }
+  span.num__title {
+    font-family: "ivar";
+    font-size: 2.5vw;
+    letter-spacing: 0.6px;
+    margin-bottom: 0 !important;
+    margin-left: 0.3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1.num__title {
+    display: inline;
+  }
+  span.num__title {
+    font-family: "ivar";
+    font-size: 3.8vw;
+    letter-spacing: 0.6px;
+    margin-bottom: 0 !important;
+    margin-left: 0.3rem;
+  }
+}
 /* img-header */
 header img.img-header {
   position: relative;
@@ -1026,9 +1062,11 @@ svg:not(root) {
   -moz-grid-auto-rows: minmax(100px, auto);
   -webkit-grid-auto-rows: minmax(100px, auto);
   -ms-grid-auto-rows: minmax(100px, auto);
-  margin-bottom: 7vw;
+  margin-bottom: 6vw;
 }
-
+.wrapper .p-list {
+  margin-bottom: 3rem;
+}
 .wrapper > .p-list:nth-child(even) {
   padding: 1em;
   border-width: 1px;
@@ -1109,7 +1147,7 @@ footer .under hr {
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
+  border-width: 0.5px;
   background-color: all var(--clr-foreground) !important;
 }
 
@@ -1485,6 +1523,9 @@ footer .under hr {
     padding: 0;
     text-align: left;
   }
+  .wrapper .p-list {
+    margin-bottom: -1rem;
+  }
   .wrapper .p-list:hover {
     transition: all 0.3s ease-in-out;
     opacity: 0.85;
@@ -1818,6 +1859,9 @@ footer .under hr {
     margin-bottom: 9vw;
   }
 
+  .wrapper .p-list {
+    margin-bottom: -0.5rem !important;
+  }
   .wrapper > .p-list {
     padding: 1em;
   }
@@ -1839,7 +1883,7 @@ footer .under hr {
     margin-bottom: 11.4vw;
   }
   .text {
-    margin-top: -4.2vw;
+    margin-top: -2.9rem !important;
     color: var(--clr-foreground);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 3.2vw;
@@ -1847,7 +1891,7 @@ footer .under hr {
   }
 
   .h1 {
-    line-height: 4rem;
+    line-height: 5rem;
     color: var(--clr-foreground);
     font-family: "Le murmure";
     font-size: 16vw;

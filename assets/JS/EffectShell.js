@@ -27,7 +27,7 @@ class EffectShell {
 
     // camera
     this.camera = new THREE.PerspectiveCamera(
-      37.5,
+      39.6,
       this.viewport.aspectRatio,
       0.1,
       100
