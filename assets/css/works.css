@@ -1793,7 +1793,7 @@ footer .under hr {
     position: absolute;
     right: 0;
     left: 0;
-    top: 123vw;
+    top: 128vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
@@ -1880,7 +1880,7 @@ footer .under hr {
     position: relative;
     font-family: "Le murmure";
     font-size: 19.4vw;
-    margin-bottom: 11.4vw;
+    margin-bottom: 5vw;
   }
   .text {
     margin-top: -2.9rem !important;

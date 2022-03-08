@@ -25,14 +25,14 @@
         body.style.transform = `translateY(0px)`;
         body.style.opacity = 1;
         splash.style.display = "none";
-        splash.style.transition = "0.3s";
+        splash.style.transition = "3s";
       }, 900);
     }, 2000);
   }
 
   $(window).on("load", function () {
     $("#splash")
-      .delay(1200)
+      .delay(4000)
       .fadeOut("slow", function () {
         $(this).remove();
       });

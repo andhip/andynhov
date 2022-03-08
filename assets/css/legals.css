@@ -150,9 +150,11 @@ UNDER 480px
     margin-bottom: -3.9rem !important;
   }
   #modal-container .modal__col__2nd {
+    margin-top: -0.7rem;
     margin-bottom: -0.4rem !important;
   }
   #modal-container .modal__col__scnd {
+    margin-top: -4rem !important;
     margin-bottom: -0.5rem !important;
   }
   #modal-container .modal__col__4th {
@@ -168,7 +170,7 @@ UNDER 480px
     margin-bottom: -1px !important;
   }
   #modal-container .modal-background .mod__legals__desc {
-    margin-top: 0.8rem !important;
+    margin-top: 0.5rem !important;
   }
   #modal-container .modal-background .mod__legals__desc p {
     font-size: 13.5px !important;
@@ -189,7 +191,8 @@ UNDER 480px
     margin-top: -3.5rem;
   }
   #modal-container .modal-background .modal__col__trd1 {
-    margin-top: -1.8rem;
+    margin-top: -1.9rem !important;
+    margin-bottom: 0.3rem;
   }
   #modal-container .modal-background .modal__col__trd {
     margin-top: -1.2rem;
