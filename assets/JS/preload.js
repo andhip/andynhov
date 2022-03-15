@@ -32,7 +32,7 @@
 
   $(window).on("load", function () {
     $("#splash")
-      .delay(4000)
+      .delay(2500)
       .fadeOut("slow", function () {
         $(this).remove();
       });

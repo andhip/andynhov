@@ -18,8 +18,8 @@
 :root {
   --main-color: #d9d9d9;
   --bg-color: #0f0f0f;
-  --sc-color: #fade01;
-  --rd-color: #c2c1c1;
+  --rd-color: #f0d403;
+  /* --rd-color: #c2c1c1; */
 }
 
 html.modal-active,

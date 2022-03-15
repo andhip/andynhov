@@ -4,7 +4,8 @@
 }
 
 .splash {
-  display: block;
+  display: flex;
+  position: absolute;
   align-items: center;
   height: 100vh;
   width: 100%;
@@ -33,11 +34,10 @@
 }
 
 .splash-title {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   color: var(--main-color);
   text-transform: none;
-  overflow: hidden !important;
 }
 
 .splash-title span {
