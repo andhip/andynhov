@@ -62,9 +62,10 @@ nav {
   float: right;
   isolation: isolate;
   z-index: 4;
-  top: 91.4%;
+  top: 91.8%;
   font-size: 15px;
   margin-right: 0.2rem;
+  box-shadow: none;
 }
 
 .nav__left_items {
@@ -189,7 +190,8 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: hsl(0 0% 50% / 0.2);
+  /* background: rgba(128, 128, 128, 0.103); */
+  background: transparent;
   border-radius: inherit;
   transform: scale(0);
   opacity: 0;

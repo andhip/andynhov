@@ -54,22 +54,42 @@
   // ------------------------------------------------------------------------------ //
   // Live CLOCK
   // ---------------------------------------------------------
-  var span = document.getElementById("mod__clock");
 
-  function time() {
-    var d = new Date();
-    var s = d.getSeconds();
-    var m = d.getMinutes();
-    var h = d.getHours();
-    span.textContent =
-      ("0" + h).substr(-2) +
-      ":" +
-      ("0" + m).substr(-2) +
-      ":" +
-      ("0" + s).substr(-2);
+  function updateTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    var t_str = hours + ":" + minutes + " ";
+    if (hours > 11) {
+      t_str += "PM";
+    } else {
+      t_str += "AM";
+    }
+    document.getElementById("mod__clock").innerHTML = t_str;
   }
+  setInterval(updateTime, 1000);
+  // ------------------------------------------------------------------------------ //
+  // Live CLOCK
+  // ---------------------------------------------------------
+  // var span = document.getElementById("mod__clock");
 
-  setInterval(time, 1000);
+  // function time() {
+  //   var d = new Date();
+  //   var s = d.getSeconds();
+  //   var m = d.getMinutes();
+  //   var h = d.getHours();
+  //   span.textContent =
+  //     ("0" + h).substr(-2) +
+  //     ":" +
+  //     ("0" + m).substr(-2) +
+  //     ":" +
+  //     ("0" + s).substr(-2);
+  // }
+
+  // setInterval(time, 1000);
 
   // ------------------------------------------------------------------------------ //
   // Protfolio Viewer
@@ -107,4 +127,8 @@
   var today = new Date().toString().split(" ").splice(1, 3).join(" ");
 
   document.getElementById("date_loc").innerHTML = today;
+
+  // ------------------------------------------------------------------------------ //
+  // Automatic Last Updated
+  // ---------------------------------------------------------
 })(jQuery);
