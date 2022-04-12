@@ -1387,7 +1387,7 @@ footer .under hr {
   /* behance-dribbble */
   .placeholder__socials {
     position: relative;
-    margin-top: -2rem;
+    margin-top: -3rem;
     outline: 0 none;
     display: inline-block;
     z-index: 3;
@@ -1657,6 +1657,12 @@ footer .under hr {
   480 MOOBILE 
   ================================================ */
 @media only screen and (max-width: 480px) {
+  body{
+    background-color: var(--dark-clr) !important;
+    --webkit--background-color: var(--dark-clr) !important;
+    --ms--background-color: var(--dark-clr) !important;
+    --moz--background-color: var(--dark-clr) !important;
+  }
   .h-tape {
     top: 15.5rem;
   }
@@ -1707,7 +1713,7 @@ footer .under hr {
     line-height: 3.8rem;
     letter-spacing: -0.01px;
     font-family: "Guardian Ty-Re";
-    margin-top: 12vw;
+    margin-top: 17vw;
     text-transform: none;
   }
   .placeholder span {
@@ -1792,19 +1798,20 @@ footer .under hr {
 
   /* arrow */
   .p-side {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     right: 0;
     left: 0;
     top: 128vw;
     -webkit-transform: translate(0, 140%);
     -ms-transform: translate(0, 140%);
     -moz-transform: translate(0, 140%);
-    transform: translate(0, 140%);
+    transform: translate(0, 140%); */
   }
   .p-arrow {
-    width: 8vh;
+    /* width: 8vh;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; */
   }
 
   /* img-header */
@@ -1929,7 +1936,7 @@ footer .under hr {
     height: 0;
   }
   footer#main__footer {
-    padding-top: 12vw;
+    padding-top: 13vw;
   }
   footer .under hr {
     margin-top: 0.5em;
@@ -2135,4 +2142,16 @@ footer .under hr {
     text-align: left !important;
     float: left !important;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+  .p-side{
+    display: none !important;
+
+  }
+#works {
+  padding-top: 5rem !important;
+}
+.h-tape {
+  top: 9rem;
+}
 }
