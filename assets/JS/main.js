@@ -72,6 +72,22 @@
   }
   setInterval(updateTime, 1000);
   // ------------------------------------------------------------------------------ //
+  // Live CLOCK - STATEMENT
+  // ---------------------------------------------------------
+  var hour = new Date().getHours();
+  let doo;
+  if (hour < 9) {
+    doo = "make a coffee";
+  } else if (hour > 9 && hour < 12) {
+    doo = "designing things";
+  } else if (hour > 12 && hour < 18) {
+    doo = "in execution";
+  } else {
+    doo = "sleep";
+  }
+
+  document.getElementById("mod__doo").innerHTML = doo;
+  // ------------------------------------------------------------------------------ //
   // Live CLOCK
   // ---------------------------------------------------------
   // var span = document.getElementById("mod__clock");
