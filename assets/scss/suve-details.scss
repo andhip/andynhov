@@ -724,11 +724,16 @@ body:before {
 @media screen and (max-width: 480px) {
   .bradcam_area .bradcam_text {
     margin-top: -2rem !important;
+    text-align: left !important;
+    .bradcam_area .bradcam_text h3 {
+      line-height: normal;
+    }
   }
   .bradcam_area .bradcam_text span {
     display: block !important;
-    font-size: 15.4vw;
+    font-size: 18vw;
     text-align: left !important;
+    margin-right: 0;
     margin-left: 0.8rem;
   }
 }
