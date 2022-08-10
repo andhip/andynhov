@@ -76,14 +76,14 @@
   // ---------------------------------------------------------
   var hour = new Date().getHours();
   let doo;
-  if (hour < 9) {
+  if (hour < 8) {
     doo = "make a coffee";
-  } else if (hour > 9 && hour <= 12) {
+  } else if (hour > 8 && hour <= 12) {
     doo = "designing things";
   } else if (hour > 12 && hour <= 18) {
-    doo = "in execution";
+    doo = "bringing ideas to life";
   } else {
-    doo = "sleep";
+    doo = "dreaming";
   }
 
   document.getElementById("mod__doo").innerHTML = doo;
