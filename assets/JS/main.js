@@ -77,7 +77,7 @@
   var hour = new Date().getHours();
   let doo;
   if (hour < 8) {
-    doo = "make a coffee";
+    doo = "making coffee";
   } else if (hour > 8 && hour <= 12) {
     doo = "designing things";
   } else if (hour > 12 && hour <= 18) {
