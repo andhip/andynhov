@@ -85,7 +85,7 @@
   } else if (hour > 12 && hour <= 18) {
     doo = "bringing ideas to life";
   } else if (hour > 18 && hour <= 21) {
-    doo = "relaxing with fams";
+    doo = "relaxing with my fam";
   } else {
     doo = "404 meditation";
   }
