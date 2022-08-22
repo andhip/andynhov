@@ -945,7 +945,7 @@ header img.img-header {
   } */
 
 #works {
-  padding-top: 15rem !important;
+  padding-top: 7rem !important;
 }
 .sub-works h2 {
   position: relative;
@@ -982,7 +982,7 @@ header img.img-header {
 .h-tape {
   position: absolute;
   text-align: center;
-  top: 18rem;
+  top: 11rem;
   left: 14%;
   right: 0%;
   bottom: -3.5vw;
@@ -1134,7 +1134,7 @@ footer {
   height: 0;
 }
 footer#main__footer {
-  padding-top: 11.5vw;
+  padding-top: 9vw;
 }
 .first__foot__row .foot__btt svg {
   color: var(--clr-foreground);
