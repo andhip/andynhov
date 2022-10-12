@@ -1,7 +1,6 @@
 .read__arrow__sv {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__sv svg {
   position: relative;
   width: 150px;
@@ -20,7 +19,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__sv {
     display: none;
@@ -29,11 +27,9 @@
     display: none;
   }
 }
-
 .read__arrow__mk {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__mk svg {
   position: relative;
   width: 150px;
@@ -52,7 +48,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__mk {
     display: none;
@@ -61,11 +56,9 @@
     display: none;
   }
 }
-
 .read__arrow__mim {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__mim svg {
   position: relative;
   width: 150px;
@@ -84,7 +77,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__mim {
     display: none;
@@ -93,11 +85,9 @@
     display: none;
   }
 }
-
 .read__arrow__scj {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__scj svg {
   position: relative;
   width: 150px;
@@ -116,7 +106,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__scj {
     display: none;
@@ -125,11 +114,9 @@
     display: none;
   }
 }
-
 .read__arrow__rdp {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__rdp svg {
   position: relative;
   width: 150px;
@@ -148,7 +135,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__rdp {
     display: none;
@@ -157,11 +143,9 @@
     display: none;
   }
 }
-
 .read__arrow__g-spices {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__g-spices svg {
   position: relative;
   width: 150px;
@@ -180,7 +164,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__g-spices {
     display: none;
@@ -189,16 +172,14 @@
     display: none;
   }
 }
-
 .read__arrow__aqd {
   margin-bottom: 0 !important;
 }
-
 .read__arrow__aqd svg {
   position: relative;
   width: 150px;
   float: left;
-  margin-top: -150.7vw;
+  margin-top: -124vw;
   margin-left: 5.3rem;
   margin-bottom: -12rem;
   z-index: 2 !important;
@@ -212,7 +193,6 @@
     margin-bottom: 0 !important;
   }
 }
-
 @media screen and (max-width: 950px) {
   .read__arrow__aqd {
     display: none;
@@ -220,5 +200,4 @@
   .read__arrow__aqd svg {
     display: none;
   }
-}
-/*# sourceMappingURL=read__arrow__public.css.map */
+}/*# sourceMappingURL=read__arrow__public.css.map */
