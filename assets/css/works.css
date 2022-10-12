@@ -4,26 +4,10 @@
     --sc-color: #fade01; */
   --dark-clr: #161616;
   /* --light-clr: #afadad; */
-  --light-clr: #b6b6b6;
-  --clr-foreground: var(--dark-clr); /*hsl(0 0% 0%);*/
-  --clr-background: var(--light-clr);
+  --light-clr: #c0c0c0;
   --thrd-clr: #424242;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --clr-background: var(--dark-clr);
-    --clr-foreground: var(--light-clr);
-  }
-}
-.light-theme {
-  --clr-foreground: var(--dark-clr);
-  --clr-background: var(--light-clr);
-}
 
-.dark-theme {
-  --clr-background: var(--dark-clr);
-  --clr-foreground: var(--light-clr);
-}
 *,
 *::before,
 *::after {
@@ -31,10 +15,11 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--clr-background);
-  color: var(--clr-foreground);
+  background: var(--dark-clr);
+  color: var(--light-clr);
 }
 
 nav {
@@ -55,7 +40,7 @@ nav {
   cursor: pointer;
   background: 0;
   border: 0;
-  opacity: 0.8;
+  opacity: .9;
   padding: 0.1px;
   border-radius: 50%;
   position: fixed;
@@ -88,7 +73,7 @@ nav {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.4px;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 }
 .cr_year {
   padding: 0.2rem;
@@ -99,7 +84,7 @@ nav {
   top: 91%;
   font-size: 13px;
   margin-left: 9px;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 }
 .nav__lc {
   padding: 0.2rem;
@@ -109,7 +94,7 @@ nav {
   font-size: 14px;
   letter-spacing: 0.3px;
   margin-right: 11px;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 
   /* 
   letter-spacing: -4px;
@@ -143,15 +128,6 @@ nav {
   }
   #switch-theme {
     display: none;
-    /* padding: 0.2rem;
-    border-radius: 50%;
-    position: fixed;
-    display: block;
-    isolation: isolate;
-    font-size: 15px;
-    margin-top: 0.4rem;
-    margin-right: 0.1rem;
-    top: 3% !important; */
   }
   /* .cr_year {
     top: 95.7%;
@@ -181,122 +157,6 @@ nav {
     margin-right: 5px;
     margin-top: 4.5px;
   }
-}
-#switch-theme svg {
-  fill: var(--clr-foreground);
-}
-
-#switch-theme::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* background: rgba(128, 128, 128, 0.103); */
-  background: transparent;
-  border-radius: inherit;
-  transform: scale(0);
-  opacity: 0;
-  z-index: -1;
-}
-
-.light-theme #switch-theme::before {
-  animation: pulseToLight 1650ms ease-out;
-}
-
-.dark-theme #switch-theme::before {
-  animation: pulseToDark 1650ms ease-out;
-}
-/* 
-#switch-theme::after {
-  content: attr(aria-label);
-  position: absolute;
-  color: #a7a7a7;
-  background: transparent;
-  width: max-content;
-  font-size: 0.8rem;
-  right: 80%;
-  top: calc(50% - 1rem);
-  margin: 0 auto;
-  padding: 0.7em 1em;
-  border-radius: 0.125em;
-  opacity: 0;
-  transform: scale(0);
-  transform-origin: top;
-  transition: transform 0ms linear 100ms, opacity 100ms linear;
-} */
-
-#switch-theme:hover,
-#switch-theme:focus {
-  outline: 0;
-  opacity: 1;
-  background: hsl(0 0% 50% / 0.15);
-  transition: all 0.3s ease-in-out;
-}
-
-#switch-theme:hover::after,
-#switch-theme:focus-visible::after {
-  opacity: 0.7;
-  transform: scale(1);
-  transition: transform 70ms linear, opacity 70ms linear;
-}
-
-.toggle-circle {
-  transition: transform 500ms ease-out;
-}
-
-.light-theme .toggle-circle {
-  transform: translateX(-15%);
-}
-
-.toggle-sun {
-  transform-origin: center center;
-  transition: transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32);
-}
-
-.dark-theme .sun-core {
-  transform: rotate(-40deg);
-}
-.dark-theme .sun-rays {
-  transform: rotate(-180deg);
-  opacity: 0;
-}
-@keyframes pulseToLight {
-  0% {
-    transform: scale(0);
-    opacity: 0.5;
-  }
-  10% {
-    transform: scale(1);
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
-
-@keyframes pulseToDark {
-  0% {
-    transform: scale(0);
-    opacity: 0.5;
-  }
-  10% {
-    transform: scale(1);
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
-.light-theme .toggle-sun {
-  transform: rotate(0.5turn);
-}
-.light-theme .img .toggle-sun {
-  transform: rotate(0.5turn);
 }
 
 /* main ========================= */
@@ -621,7 +481,7 @@ header {
   outline: 0 none;
   margin-top: -0.5rem;
   z-index: 3;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   font-family: "NF Chimaera Sans", sans-serif;
   text-decoration: none;
   background: none !important;
@@ -639,15 +499,15 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   line-height: 20px;
 }
 
 .social__contact {
   position: relative;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   font-size: 1vw;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
 }
 
 .social__contact:after {
@@ -672,7 +532,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--clr-foreground);
+  background-color: var(--light-clr);
   transform-origin: bottom center;
   transition: transform 0.3s ease-out;
   -webkit-transition: transform 0.3s ease-out;
@@ -700,7 +560,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
     -webkit-transition: transform 0.3s ease-out;
@@ -714,7 +574,7 @@ a {
 
 .text {
   margin-top: -0.6rem;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   font-family: "NF Chimaera Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
@@ -724,7 +584,7 @@ a {
 .h1 {
   padding-top: 0.9rem;
   line-height: 6rem;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   font-family: "Le murmure";
   font-size: 6vw;
 }
@@ -1019,7 +879,7 @@ header img.img-header {
 
   .text {
     margin-top: 0;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 1.5vw;
     line-height: 1.2em;
@@ -1102,7 +962,7 @@ svg:not(root) {
 }
 
 .link-list a {
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   text-decoration: none;
   font-weight: 600;
   font-size: 17px;
@@ -1137,7 +997,7 @@ footer#main__footer {
   padding-top: 9vw;
 }
 .first__foot__row .foot__btt svg {
-  color: var(--clr-foreground);
+  color: var(--light-clr);
   width: 16px;
   margin-left: 5px;
   transform: rotate(-180deg);
@@ -1150,7 +1010,7 @@ footer .under hr {
   margin-right: auto;
   border-style: inset;
   border-width: 0.5px;
-  background-color: all var(--clr-foreground) !important;
+  color: var(--light-clr);
 }
 
 .foot__btt {
@@ -1158,7 +1018,7 @@ footer .under hr {
   display: flex;
   font-size: 1.1vw;
   letter-spacing: -0.03em;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 }
 .first__foot__row {
   display: grid;
@@ -1182,7 +1042,7 @@ footer .under hr {
   letter-spacing: 0.4px;
   cursor: pointer;
   transition: all 0.3s;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 }
 
 @media (min-width: 991px) {
@@ -1196,7 +1056,7 @@ footer .under hr {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
     -webkit-transition: transform 0.3s ease-out;
@@ -1219,7 +1079,7 @@ footer .under hr {
     letter-spacing: 0.4px;
     cursor: pointer;
     transition: all 0.3s;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
   }
 }
 
@@ -1230,7 +1090,7 @@ footer .under hr {
     clear: both;
   }
   .i-link-legals {
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 1.8vw;
     letter-spacing: -0.03em;
     cursor: pointer;
@@ -1250,7 +1110,7 @@ footer .under hr {
   }
   .i-link-legals {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 3.4vw;
     letter-spacing: -0.02em;
     cursor: pointer;
@@ -1259,7 +1119,7 @@ footer .under hr {
 }
 .foot__mail a {
   font-size: 1.2vw;
-  color: var(--clr-foreground);
+  color: var(--light-clr);
 }
 
 .i-list {
@@ -1336,7 +1196,7 @@ footer .under hr {
     top: 2.6vw;
     bottom: 0;
     left: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
   }
@@ -1391,7 +1251,7 @@ footer .under hr {
     outline: 0 none;
     display: inline-block;
     z-index: 3;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     text-decoration: none;
   }
@@ -1409,13 +1269,13 @@ footer .under hr {
 
   a {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     line-height: 20px;
   }
 
   .social__contact {
     position: relative;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 2vw;
     letter-spacing: 1px;
   }
@@ -1430,7 +1290,7 @@ footer .under hr {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
     -webkit-transition: transform 0.3s ease-out;
@@ -1550,7 +1410,7 @@ footer .under hr {
   }
   .text {
     margin-top: 0;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 1.7vw;
     line-height: 1.1em;
@@ -1558,7 +1418,7 @@ footer .under hr {
 
   .h1 {
     line-height: 4rem;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "Le murmure";
     font-size: 11vw;
     letter-spacing: -0.1px;
@@ -1596,7 +1456,7 @@ footer .under hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
   }
 
   .foot__btt {
@@ -1604,7 +1464,7 @@ footer .under hr {
     display: flex;
     font-size: 1.7vw;
     letter-spacing: -0.03em;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
   }
   .first__foot__row {
     display: grid;
@@ -1615,7 +1475,7 @@ footer .under hr {
     float: right;
     font-size: 1.7vw;
     letter-spacing: -0.03em;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
   }
 
   .foot__mail a {
@@ -1637,7 +1497,7 @@ footer .under hr {
 
   .i-link {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 1.8vw;
     letter-spacing: -0.01em;
   }
@@ -1645,7 +1505,7 @@ footer .under hr {
   .i-copy {
     text-align: left;
     position: absolute;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 1.7vw;
     margin-top: 5.1px;
@@ -1690,7 +1550,7 @@ footer .under hr {
     top: 4.3vw;
     bottom: 0;
     left: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
   }
@@ -1749,7 +1609,7 @@ footer .under hr {
     outline: 0 none;
     display: inline-block;
     z-index: 3;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     text-decoration: none;
   }
@@ -1770,7 +1630,7 @@ footer .under hr {
 
   a {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     line-height: 20px;
   }
 
@@ -1784,7 +1644,7 @@ footer .under hr {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
     transform-origin: bottom center;
     transition: transform 0.3s ease-out;
     -webkit-transition: transform 0.3s ease-out;
@@ -1893,7 +1753,7 @@ footer .under hr {
   }
   .text {
     margin-top: -2.9rem !important;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 3.2vw;
     line-height: 1.1em;
@@ -1901,7 +1761,7 @@ footer .under hr {
 
   .h1 {
     line-height: 5rem;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "Le murmure";
     font-size: 16vw;
     letter-spacing: -1px;
@@ -1945,7 +1805,7 @@ footer .under hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-    background-color: var(--clr-foreground);
+    background-color: var(--light-clr);
   }
 
   .foot__btt {
@@ -1953,7 +1813,7 @@ footer .under hr {
     display: flex;
     font-size: 3vw;
     letter-spacing: -0.03em;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
   }
   .first__foot__row .foot__btt svg {
     width: 14px;
@@ -1967,7 +1827,7 @@ footer .under hr {
     float: right;
     font-size: 3vw;
     letter-spacing: -0.01em;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     margin-top: 1.8vw;
   }
 
@@ -1989,7 +1849,7 @@ footer .under hr {
   }
   .i-link {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 3.4vw;
     letter-spacing: -0.01em;
   }
@@ -2042,7 +1902,7 @@ footer .under hr {
 
   .text {
     margin-top: 0;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 2vw;
     line-height: 1em;
@@ -2056,7 +1916,7 @@ footer .under hr {
   }
   .i-link-legals {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 3.2vw;
     letter-spacing: -0.03em;
     cursor: pointer;
@@ -2087,7 +1947,7 @@ footer .under hr {
 
   .text {
     margin-top: 0;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 2vw;
     line-height: 1.2em;
@@ -2101,7 +1961,7 @@ footer .under hr {
   }
   .i-link-legals {
     text-decoration: none;
-    color: var(--clr-foreground);
+    color: var(--light-clr);
     font-size: 2.2vw;
     letter-spacing: -0.03em;
     cursor: pointer;
