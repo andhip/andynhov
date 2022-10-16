@@ -597,6 +597,8 @@ a {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .text {
     margin-top: -2rem !important;
+    opacity: .85 !important;
+
   }
   h1.num__title {
     display: inline;
@@ -1682,7 +1684,7 @@ footer .under hr {
     height: auto;
     z-index: -3;
     padding-top: 0;
-    margin-top: -5.5rem;
+    /* margin-top: -5.5rem; */
     float: right;
     margin-right: 3vw;
     opacity: 0.6;
@@ -1753,7 +1755,7 @@ footer .under hr {
     margin-bottom: 5vw;
   }
   .text {
-    margin-top: -2.9rem !important;
+    margin-top: -2.5rem !important;
     color: var(--light-clr);
     font-family: "NF Chimaera Sans", sans-serif;
     font-size: 3.2vw;
@@ -2013,6 +2015,6 @@ footer .under hr {
   padding-top: 5rem !important;
 }
 .h-tape {
-  top: 8.5rem;
+  top: 9.3rem;
 }
 }
