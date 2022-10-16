@@ -234,7 +234,7 @@ body:before {
       display: block;
       position: relative;
       cursor: zoom-out;
-      width: 36%;
+      width: 38%;
       max-width: 860px;
       animation-name: zoom;
       animation-duration: 0.5s;
@@ -650,7 +650,7 @@ body:before {
     font-size: 2.5vw;
     font-weight: 500;
     text-transform: none;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     margin-right: 2px;
   }
 }
@@ -713,7 +713,8 @@ body:before {
 .work_details_area .details_info .info p {
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
+  line-height: 1.9vw;
   color: var(--main-color);
 }
 @media screen and (min-width: 480px) and (max-width: 630px) {
