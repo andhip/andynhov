@@ -487,6 +487,7 @@ body:before {
 .work_details_area .porject_btn .custom-btn {
   font-family: "NF Chimaera Sans";
   font-size: 13px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background: transparent;
   border: none;
@@ -499,7 +500,6 @@ body:before {
   margin-top: 5px;
   z-index: 1;
   color: var(--main-color);
-  letter-spacing: 0.5px;
   transition: all 0.3s ease-in-out;
 }
 .work_details_area .porject_btn button::after {
@@ -555,12 +555,12 @@ body:before {
 
 .work_details_area .details_catagory_wrap .single_catagory span {
   font-size: 16px;
-  color: #b8bdc7;
+  color: #c2c5ca;
   font-weight: 400;
   font-family: "Saol Display";
   font-style: italic;
   text-transform: none;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
   display: block;
   margin-bottom: 4px;
 }
@@ -569,6 +569,7 @@ body:before {
   font-size: 13px;
   color: var(--main-color);
   font-weight: 400;
+  letter-spacing: 0.5px;
   margin-bottom: 6px !important;
 }
 
@@ -792,6 +793,7 @@ body:before {
 .discuss_projects h3 {
   font-family: "NF Chimaera Sans";
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 @media only screen and (min-width: 600px) {
   .discuss_projects .discuss_projects h3 {
@@ -887,6 +889,7 @@ body:before {
 }
 .prev_project a {
   font-size: 12px;
+  letter-spacing: 0.5px;
   color: var(--main-color) !important;
 }
 .prev_project a span {
@@ -916,6 +919,7 @@ body:before {
 .next_project a {
   font-size: 12px;
   color: var(--main-color) !important;
+  letter-spacing: 0.5px;
 }
 .next_project a span {
   transition: all 0.2s ease-in-out;
