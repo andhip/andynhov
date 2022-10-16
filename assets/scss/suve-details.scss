@@ -718,6 +718,11 @@ body:before {
   line-height: 1.9vw;
   color: var(--main-color);
 }
+@media screen and (max-width:1024px) {
+  .work_details_area .details_info .info p {
+    line-height: 26px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 630px) {
   .bradcam_area .bradcam_text span {
     display: inline-block !important;
@@ -738,6 +743,7 @@ body:before {
     margin-right: 0;
     margin-left: 0.8rem;
   }
+
 }
 .work_details_area .details_gall_image .grid {
   justify-content: center;

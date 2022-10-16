@@ -1679,6 +1679,7 @@ footer .under hr {
 
   /* img-header */
   header img.img-header {
+    display: none;
     position: relative;
     width: 38%;
     height: auto;
@@ -2015,6 +2016,6 @@ footer .under hr {
   padding-top: 5rem !important;
 }
 .h-tape {
-  top: 9.3rem;
+  top: 8.9rem;
 }
 }
