@@ -578,7 +578,7 @@ a {
   font-family: "NF Chimaera Sans", sans-serif;
   font-size: 15px;
   letter-spacing: 1.3px;
-  opacity: .85 !important;
+  opacity: .80 !important;
   line-height: 1.1em;
 }
 
@@ -597,7 +597,7 @@ a {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .text {
     margin-top: -2rem !important;
-    opacity: .85 !important;
+    opacity: .80 !important;
 
   }
   h1.num__title {
