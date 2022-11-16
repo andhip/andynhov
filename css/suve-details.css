@@ -429,6 +429,10 @@ body:before {
   font-family: "Saol Display";
   z-index: 2;
 }
+.bradcam_area h3 span{
+  letter-spacing: 1px;
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .bradcam_area h3 {
@@ -539,7 +543,7 @@ body:before {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -599,6 +603,179 @@ body:before {
   opacity: 0.85;
 }
 
+
+/* ====== PRESENTATION 2.0 VERSION ======= */
+.work_details_area .details_info .info__V1__1st {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+  -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+          animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+.work_details_area .details_info .info__V1__1st span {
+  display: inline;
+  font-family: "Saol Display";
+  color: var(--main-color);
+  font-size: 2.5vw;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -1px;
+  margin-right: 2px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .details_info .info__V1__1st span {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work_details_area .details_info .info__V1__1st span {
+    font-size: 8vw;
+  }
+}
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.work_details_area .details_info .info__V1__1st {
+  display: grid;
+  grid-template-columns: 2fr;
+  -webkit-grid-template-columns: 2fr;
+  -moz-grid-template-columns: 2fr;
+  -ms-grid-template-columns: 2fr;
+  grid-gap: 3rem;
+  -webkit-grid-gap: 3rem;
+  grid-auto-rows: minmax(100px, auto);
+  -moz-grid-auto-rows: minmax(100px, auto);
+  -webkit-grid-auto-rows: minmax(100px, auto);
+  -ms-grid-auto-rows: minmax(100px, auto);
+}
+
+@media only screen and (max-width: 480px) {
+  .work_details_area .details_info .info__V1__1st {
+    display: grid;
+    grid-template-columns: 2fr;
+    -webkit-grid-template-columns: 2fr;
+    -moz-grid-template-columns: 2fr;
+    -ms-grid-template-columns: 2fr;
+    grid-gap: 0.6rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .work_details_area .details_info .info__V1__1st p {
+    color: var(--main-color);
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+}
+.work_details_area .details_info .info__V1__1st p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: AUTO;
+  line-height: 2.2vw;
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .work_details_area .details_info .info__V1__1st p {
+    line-height: 26px;
+  }
+}
+
+.work_details_area .details_info .info__V1 {
+  position: relative;
+  text-align: left;
+  margin-bottom: 4rem;
+  -webkit-animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+          animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+.work_details_area .details_info .info__V1 span {
+  display: inline;
+  font-family: "Saol Display";
+  color: var(--main-color);
+  font-size: 6vw;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -1px;
+  margin-right: 2px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .work_details_area .details_info .info__V1 span {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work_details_area .details_info .info__V1 span {
+    font-size: 8vw;
+  }
+}
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.work_details_area .details_info .info__V1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  -webkit-grid-template-columns: 2fr 2fr;
+  -moz-grid-template-columns: 2fr 2fr;
+  -ms-grid-template-columns: 2fr 2fr;
+  grid-gap: 3rem;
+  -webkit-grid-gap: 3rem;
+  grid-auto-rows: minmax(100px, auto);
+  -moz-grid-auto-rows: minmax(100px, auto);
+  -webkit-grid-auto-rows: minmax(100px, auto);
+  -ms-grid-auto-rows: minmax(100px, auto);
+}
+
+@media only screen and (max-width: 480px) {
+  .work_details_area .details_info .info__V1 {
+    display: grid;
+    grid-template-columns: 2fr;
+    -webkit-grid-template-columns: 2fr;
+    -moz-grid-template-columns: 2fr;
+    -ms-grid-template-columns: 2fr;
+    grid-gap: 0.6rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .work_details_area .details_info .info__V1 p {
+    color: var(--main-color);
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+}
+.work_details_area .details_info .info__V1 p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: auto;
+  line-height: 2vw;
+  color: var(--main-color);
+  margin-top: 3.4rem;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .work_details_area .details_info .info__V1 p {
+    line-height: 26px;
+  }
+}
+
+/* ====== PRESENTATION 1.0 VERSION ======= */
 .work_details_area .details_info .info {
   position: relative;
   text-align: left;
@@ -610,7 +787,7 @@ body:before {
   display: inline;
   font-family: "Saol Display";
   color: var(--main-color);
-  font-size: 2.5vw;
+  font-size: 4vw;
   font-weight: 500;
   text-transform: none;
   letter-spacing: -1px;
@@ -672,8 +849,8 @@ body:before {
 .work_details_area .details_info .info p {
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: -0.2px;
-  line-height: 1.9vw;
+  letter-spacing: AUTO;
+  line-height: 2vw;
   color: var(--main-color);
 }
 
@@ -682,6 +859,8 @@ body:before {
     line-height: 26px;
   }
 }
+
+
 @media screen and (min-width: 480px) and (max-width: 630px) {
   .bradcam_area .bradcam_text span {
     display: inline-block !important;
