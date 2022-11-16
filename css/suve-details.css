@@ -682,7 +682,13 @@ body:before {
   line-height: 2.2vw;
   color: var(--main-color);
 }
-
+@media screen and (min-width: 768px) {
+  .work_details_area .details_info .info__V1__1st p {
+    letter-spacing: AUTO;
+    line-height: 2.2vw;
+    margin-bottom: 4rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .work_details_area .details_info .info__V1__1st p {
     line-height: 26px;
@@ -727,18 +733,20 @@ body:before {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-.work_details_area .details_info .info__V1 {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  -webkit-grid-template-columns: 2fr 2fr;
-  -moz-grid-template-columns: 2fr 2fr;
-  -ms-grid-template-columns: 2fr 2fr;
-  grid-gap: 3rem;
-  -webkit-grid-gap: 3rem;
-  grid-auto-rows: minmax(100px, auto);
-  -moz-grid-auto-rows: minmax(100px, auto);
-  -webkit-grid-auto-rows: minmax(100px, auto);
-  -ms-grid-auto-rows: minmax(100px, auto);
+@media only screen and (min-width: 768px) {
+  .work_details_area .details_info .info__V1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    -webkit-grid-template-columns: 2fr 2fr;
+    -moz-grid-template-columns: 2fr 2fr;
+    -ms-grid-template-columns: 2fr 2fr;
+    grid-gap: 3rem;
+    -webkit-grid-gap: 3rem;
+    grid-auto-rows: minmax(100px, auto);
+    -moz-grid-auto-rows: minmax(100px, auto);
+    -webkit-grid-auto-rows: minmax(100px, auto);
+    -ms-grid-auto-rows: minmax(100px, auto);
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -757,6 +765,7 @@ body:before {
     color: var(--main-color);
     font-size: 16px !important;
     font-weight: 400;
+    margin-top: 0% !important;
   }
 }
 .work_details_area .details_info .info__V1 p {
@@ -766,6 +775,7 @@ body:before {
   line-height: 2vw;
   color: var(--main-color);
   margin-top: 3.4rem;
+  margin-left: 1rem;
 
 }
 
@@ -959,8 +969,8 @@ body:before {
   }
 }
 .discuss_projects {
-  margin-top: 7rem;
-  margin-bottom: -1rem;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
 }
 .discuss_projects .outline_text span {
   font-family: "Saol Display";
@@ -969,15 +979,35 @@ body:before {
   font-weight: 400;
   font-size: 33px;
 }
+
+.discuss_projects .ico_smile {
+  font-size: 20px;
+}
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .discuss_projects .ico_smile {
     font-size: 19px;
   }
 }
+
 .discuss_projects h3 {
   font-family: "NF Chimaera Sans";
+  font-size: 7vw;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: -3px;
+  line-height: 7rem;
+  margin-bottom: 5rem;
+  opacity: 95%;
+}
+@media only screen and (max-width: 768px) {
+  .discuss_projects h3 {
+    font-family: "NF Chimaera Sans";
+    font-size: 7vw;
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 4.3rem;
+    margin-bottom: 3rem;
+    opacity: 95%;
+  }
 }
 @media only screen and (min-width: 600px) {
   .discuss_projects .discuss_projects h3 {
@@ -988,7 +1018,7 @@ body:before {
 .discuss_projects .project_text .custom-btn {
   font-family: "NF Chimaera Sans";
   font-size: 15px;
-  letter-spacing: 0.7px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background: transparent;
   border: none;
@@ -1010,7 +1040,7 @@ body:before {
   width: 100%;
   transform: scaleX(1);
   height: 1px;
-  top: 1.8vw;
+  top: 2.3vw;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1077,10 +1107,15 @@ body:before {
   color: var(--main-color) !important;
 }
 .prev_project a span {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.p__back__home a span {
   opacity: 75%;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
 }
+
 .prev_project a span:hover {
   opacity: 100%;
 }
@@ -1108,7 +1143,6 @@ body:before {
 .next_project a span {
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
-  opacity: 75%;
 }
 .next_project a span:hover {
   opacity: 100%;
